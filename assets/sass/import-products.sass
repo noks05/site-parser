@@ -1,0 +1,274 @@
+.container-import-products
+	position: relative
+	max-width: 1300px
+	margin: 50px auto 200px
+
+.cntr-inner-import-products
+	border-radius: 7px
+	background-color: white
+	box-shadow: 0 0 10px 2px #f4f4f4
+
+	.checkbox-row
+		margin-right: 35px
+
+	.cntr-tabs-add
+		position: relative
+		display: flex
+		align-items: flex-end
+
+		.contr-nav-search
+			display: flex
+
+			.but-category-nav
+				margin-right: 20px
+
+				.but-toggle-menu-category:hover
+					background-color: rgba(100, 100, 100, .5)
+					background-color: #dbdbdb					
+				
+				.but-toggle-menu-category-active
+					background-color: rgba(100, 100, 100, .5)
+					background-color: #dbdbdb
+
+		.item-head-table
+			width: 33.3%
+
+	.table-navigation
+		display: none
+		width: 100%
+		padding: 0
+
+		.table-nav-search
+			margin-right: 20px
+
+.im-pr-import-cntr-active
+	.table-navigation
+		display:  block
+		padding-top: 20px
+
+.im-pr-import-cntr
+	padding: 20px
+
+.im-pr-help
+	margin: 0
+	padding: 20px 0
+	text-align: center
+	font-size: 14px
+	color: #2d2d2d94
+
+.im-pr-form-contr
+	text-align: center
+
+	.im-pr-input1
+		cursor: pointer
+
+	.form-control
+		line-height: 1.6
+
+		&::file-selector-button
+			width: 10rem
+
+.contr-but-import-form
+	text-align: end
+	padding-top: 27px
+
+.im-pr-button
+	width: 101px
+	color: white
+	background-color: $blueviolet-light
+
+	&:hover
+		background-color: $blueviolet-dark
+
+.tabs-main-table
+	display: flex
+	justify-content: center
+
+.item-tabs
+	display: flex
+	text-align: center
+	margin-right: 10px
+
+	&:last-child
+		margin-right: 0
+
+	.content-item-tabs		
+		display: inline-block
+		border-radius: 7px
+		border: 1px dotted #181c32cc
+		padding: 19px
+		width: 120px
+		height: 55px
+		object-fit: contain
+		transition: all 0.2s
+		cursor: pointer	
+
+		&:hover
+			border: 1px solid #181c325c
+			background-color: #283f9714
+
+	.content-item-tabs-sber
+		padding: 14px
+
+	.content-item-tabs-wild
+		padding: 16px
+
+	.content-item-tabs-active
+		border: 1px solid #181c325c
+		background-color: #283f9714
+
+.cntr-import-add
+	text-align: end
+
+	.button-import-im-pr
+		margin-right: 20px
+		border: 1px dashed #859ce8
+		color: #859ce8
+		background-color: white
+
+		&:hover
+			background-color: #859ce87a
+
+	.button-add-im-pr
+		border: 1px solid yellowgreen
+		color: white
+		background-color: yellowgreen
+
+		&:hover
+			color: white
+			background-color: #85a83e
+
+.text-number-product-all
+	text-align: end
+	margin-bottom: 10px
+	font-size: 13px
+	color: #999
+
+.im-pr-table-cntr
+	input	
+		display: none
+
+	.checkbox-clone
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 20px
+		height: 20px
+		border: 1px solid #9998						
+		border-radius: 3px
+		cursor: pointer
+		transition: all 200ms linear
+
+		&:hover
+			border: 1px solid #9acd32
+
+		.fa
+			color: white
+
+	input[type="checkbox"]:checked ~ .checkbox-clone
+			background-color: #9acd32
+
+
+.wrap-import-products
+	.product-width
+		position: relative
+		width: 40%
+		padding-left: 32px
+
+	.price-width
+		width: 20%
+
+	.position-width
+		width: 20%
+
+	.action-width
+		width: 20%
+
+.wrap-import-products
+	.container-import-products
+		.cntr-inner-import-products
+			form 
+				.fa:hover
+					color: #a8b6e6
+
+			.search-table:hover
+				border: 1px solid #a8b6e6
+
+			.category-value
+				color: $blueviolet-light
+
+			.filter-on
+				color: $blueviolet-light
+				background-color: $blueviolet-opacity
+
+				&:hover
+					color: white
+					background-color: $blueviolet-light
+
+			.dropdown-list-category
+				color: $blueviolet-light
+
+			.cont-row-h
+				border-bottom: 1px dashed $blueviolet-light
+
+			input[type=checkbox]:checked ~ .checkbox-clone
+				background-color: $blueviolet-light
+
+			.checkbox-clone:hover
+				border: 1px solid $blueviolet-light
+
+// чекбокс таблицы				
+.add-all-content
+	position: absolute
+	top: -1px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	height: 100%
+	width: 100%
+	padding-left: 100px
+	border-radius: 7px 7px 0 0
+	background-color: #eee
+	transition: none
+	z-index: -5
+
+.contr-it-all-add
+	display: flex
+	margin-right: 30px
+
+.info-all-add
+	margin-right: 30px
+
+.item-add-all
+	margin-right: 30px
+	cursor: pointer
+
+.add-all-cont-import
+	color: $blueviolet-light
+
+	.fa
+		margin-right: 5px
+
+.checkbox-row-head
+	position: relative
+	display: inline-flex
+	margin-right: 40px
+
+	.checkbox,
+	.checkbox-clone
+		z-index: 6
+
+	.text-check
+		padding-left: 53px
+		cursor: pointer
+
+.none-product
+	text-align: center
+	padding: 20px
+	font-size: 14px
+	color: grey
+
+.modal-body-import
+	input[type=text]:focus 
+		outline: none		
+		border: 1px solid $blueviolet-light

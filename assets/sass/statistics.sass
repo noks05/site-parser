@@ -1,0 +1,164 @@
+.wrap-statistics
+	position: relative
+	max-width: 1300px
+	margin: 0 auto 50px
+	overflow: hidden
+
+	@media(max-width: 1525px)
+		margin-left: 110px
+		margin-right: 10px
+
+.container-statistics
+	padding: 10px
+	border: 1px solid #f5f5f5
+	border-radius: 10px
+	background-color:  white
+
+	.contr-title-stat
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 0 14px		
+		cursor: pointer
+
+		.title-stat-contr
+			margin-bottom: 0
+			font-size: 16px
+			font-weight: 400
+			color: grey
+
+	.contr-box-stat
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 10px
+
+.contr-title-box-stat
+	display: flex
+	justify-content: center
+	flex-direction: column
+	width: 50%
+	margin-bottom: 0
+	padding-right: 20px
+	font-weight: lighter
+	font-size: 16px
+
+	.fa-caret-up
+		margin-left: 10px
+		color: grey
+		transition: all .3s linear
+
+.text-stat-contr
+	font-size: 14px
+	color: grey
+
+.container-statistics-active
+	.contr-box-stat
+		display: none
+
+	.title-stat-contr
+		.fa-caret-up:before
+			content: '\f0d7'
+
+.cont-box-stat
+	position: relative
+	display: flex
+	margin-bottom: 20px
+	padding: 15px
+	border: 1px solid #eee
+	border-radius: 7px
+	background-color: white
+
+	.all-product-stat
+		text-align: center
+		margin-bottom: 10px
+		font-size: 25px
+
+		.number-all-stat
+			max-width: 160px
+			margin: 0 auto
+			margin-bottom: 0
+			border-radius: 5px
+			font-weight: 300
+
+	.contr-text-all-stat
+		display: flex
+		justify-content: center
+		font-size: 13px
+		font-weight: 500
+		color: grey
+
+		.text-1-all-stat
+			margin-right: 10px
+
+.contr-market-stat
+	width: 50%
+	min-width: 192px
+	border-radius: 5px
+	background-color: white
+
+	.box-market-stat
+		display: flex
+		align-items: center
+		justify-content: space-around
+		padding: 8px
+		border-bottom: 1px solid $border-grey
+
+		&:last-child
+			border-bottom: none
+
+	.contr-img-stat
+		margin-right: 0
+
+		.img-stat
+			width: 16px
+			height: 16px
+			object-fit: contain
+
+	.number-market-stat
+		font-size: 15px
+		margin-right: 5px
+		color: #999
+
+	.text-market-stat
+		padding: 3px
+		border-radius: 3px
+		font-size: 11px
+		text-decoration: underline
+		color: black
+		cursor: pointer
+
+.subtitle-stat
+	max-width: 250px
+	margin: 0 auto 10px
+	text-align: center
+	font-size: 14px
+	font-weight: 300
+	line-height: 18px
+	text-transform: uppercase
+
+
+.box-stat-product
+	color: #5400e0
+	.number-all-stat
+		background-color: #5400e029
+
+.box-untop-product
+	color: #e22e30
+	.number-all-stat
+		background-color: #e22e301f
+
+.box-midle-product
+	color: #1d9225
+	.number-all-stat
+		background-color: #5ac2614d
+
+.box-bottom-product
+	color: #69900d
+	.number-all-stat
+		background-color: #9ac83030
+
+.box-unkonk-product
+	color: black
+	.number-all-stat
+		background-color: #9999994d

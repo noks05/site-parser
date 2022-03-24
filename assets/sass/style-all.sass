@@ -1,0 +1,118 @@
+@font-face
+	font-family: 'Poppins'
+	src: local('PoppinsLight') 
+	src: url('../fonts/PoppinsLight.woff2') format('woff2'), url('../fonts/PoppinsLight.woff') format('woff')
+	font-weight: 300
+	font-display: swap
+	
+@font-face
+	font-family: 'Poppins'
+	src: local('PoppinsRegular')
+	src: url('../fonts/PoppinsRegular.woff2') format('woff2'), url('../fonts/PoppinsRegular.woff') format('woff')
+	font-weight: 400
+	font-display: swap
+	
+@font-face
+	font-family: 'Poppins'
+	src: local('PoppinsMedium')
+	src: url('../fonts/PoppinsMedium.woff2') format('woff2'), url('../fonts/PoppinsMedium.woff') format('woff')
+	font-weight: 500
+	font-display: swap
+	
+@font-face
+	font-family: 'Poppins'
+	src: local('PoppinsSemiBold')
+	src: url('../fonts/PoppinsSemiBold.woff2') format('woff2'), url('../fonts/PoppinsSemiBold.woff') format('woff')
+	font-weight: 600
+	font-display: swap
+	
+@font-face
+	font-family: 'Poppins'
+	src: local('PoppinsBold')
+	src: url('../fonts/PoppinsBold.woff2') format('woff2'), url('../fonts/PoppinsBold.woff') format('woff')
+	font-weight: 700
+	font-display: swap
+
+
+$border-grey: #ededed
+$blueviolet: #7e26ff
+$blueviolet-light: #859ce8
+$blueviolet-dark: #5679ec
+$blueviolet-opacity: #859ce826
+$blue: #584ef8
+$blue-pastel: #1c9dd0
+$violet-opacity: #cc7bd0
+$bluedark: #46b7c0
+$blue: #cbf1f4
+$green: #6d931f
+$green-l: #8dad41
+$green-light: #9acd32
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: 'Poppins', sans-serif 
+
+body
+	min-height: 100vh
+	background: #1d261005
+	line-height: normal
+
+ol,
+ul	
+	padding-left: 0
+	margin-bottom: 0
+
+a
+	color: inherit
+	text-decoration: none
+
+.Wrapper-body
+	position: relative
+	width: 100%
+	min-height: 100vh
+
+.wrapper
+	padding-bottom: 150px
+
+.background-svg
+	position: fixed
+	background-image: url("../jpg-png-svg/wave(blue1).svg")
+	background-size: cover
+	width: 100%
+	height: 99%
+	bottom: 0
+	opacity: 0.2
+
+	img
+		width: 220%
+		height: 100%
+
+.button-drop
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		height: 40px
+		padding: 0 20px
+		border: none
+		border-radius: 5px
+		font-size: 14px
+		cursor: pointer
+		transition: all 100ms linear
+
+
+@import "header"
+@import "side-bar"
+@import "multi-step-form"
+@import "table-products"
+@import "tariffs"
+@import "choice-market-place"
+@import "setting-profile"
+@import "import-products"
+@import "modal-table-download"
+@import "statistics"
+@import "login-registration"
+@import "documentation"
+@import "preloader"
+

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Documentation</title>
+	<link rel="icon" href="../jpg-png-svg/favicon-top.png">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+
+	<div class="Wrapper-body">
+
+		<!-- header - шапка сайта -->
+		<div class="header">
+			<div class="container1">
+				<div class="Logo">
+					<div class="imgBx">
+						<a href="../../index.html">
+							<span>
+								<i class="fa fa-ravelry" aria-hidden="true"></i>
+							</span>
+						</a>
+					</div>
+					<a href="../../index.html"><span class="Logo2part">Servise Parser</span></a>
+				</div>
+
+				<ul>
+					<li><span class="tach"><a href="tariffs.html">Мой тариф: <span class="Free">Пробный</span></a></span>
+					</li>
+					<li><span class="tach"><a class="up-tariff" href="tariffs-copy.html">Улучшить</a></span></li>
+				</ul>
+			</div>
+
+			<div class="container2">
+				<div class="balans-products">
+					<span class="text-before-b">Бананс:</span>
+					<span class="number-b">5704</span>
+					<span class="text-after-b">тов.</span>
+				</div>
+				<div class="colokol">
+					<a class="colokol-cont" href="#">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="card">
+					<div class="content">
+						<div class="imgBx">
+							<span class="icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+							</span>
+						</div>
+						<h2>pochta@mail.ru</h2>
+					</div>
+
+					<div class="header-contr-navigation">
+						<ul class="navigation">
+							<li>
+								<a href="setting-profile.html">
+									<i class="fa fa-user-o" aria-hidden="true"></i>
+									Профиль
+								</a>
+							</li>
+							<li>
+								<a href="tariffs.html">
+									<i class="fa fa-usd" aria-hidden="true"></i>
+									Мой тариф
+								</a>
+							</li>
+							<li>
+								<a href="documentation.html">
+									<i class="fa fa-question" aria-hidden="true"></i>
+									Помощь
+								</a>
+							</li>
+							<li>
+								<a href="login-form.html">
+									<i class="fa fa-sign-out" aria-hidden="true"></i>
+									Выйти
+								</a>
+							</li>
+						</ul>
+					</div>
+
+
+					<div class="toggle">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ///header - шапка сайта -->
+
+
+
+		<!-- SideBar - навигация слева сбоку -->
+		<div class="contr-navigation-Sb">
+
+
+			<div class="contr-tutorial-item-first">
+				<div class="tutorial-parent-block" id="first"></div>
+			</div>
+			<div class="contr-tutorial-item-second">
+				<div class="tutorial-parent-block" id="second"></div>
+			</div>
+			<div class="contr-tutorial-item-third">
+				<div class="tutorial-parent-block" id="third"></div>
+			</div>
+			<div class="contr-tutorial-item-fourth">
+				<div class="tutorial-parent-block" id="fourth"></div>
+			</div>
+			<div class="contr-tutorial-item-last">
+				<div class="tutorial-parent-block" id="last"></div>
+			</div>
+
+
+			<div class="navigation-Sb">
+				<div class="TopBlock">
+					<div class="toggle" onclick="toggleMenu(event)">
+					</div>
+				</div>
+				<ul>
+					<li class="navigation-sb-li">
+						<a href="../../index.html">
+							<div class="icon">
+								<i class="fa fa-table" aria-hidden="true"></i>
+							</div>
+							<div class="title">Мониторинг</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="import-products.html">
+							<div class="icon">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>
+							<div class="title">Мои товары</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="choice-market-place.html">
+							<div class="icon">
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							</div>
+							<div class="title">Мои магазины</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="tariffs-copy.html">
+							<div class="icon">
+								<i class="fa fa-usd" aria-hidden="true"></i>
+							</div>
+							<div class="title">Тарифы</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="documentation.html">
+							<div class="icon">
+								<i class="fa fa-question" aria-hidden="true"></i>
+							</div>
+							<div class="title">Помощь</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<!-- ///SideBar - навигация слева сбоку  -->
+
+
+		<!-- блок табов по документации -->
+		<div class="wrap-tabs-documentation">
+			<div class="inner-documentation">
+				<div class="item-tab-doc">
+					<a class="link-tab-doc" href="#main-table-doc">Таблица</a>
+				</div>
+				<div class="item-tab-doc">
+					<a class="link-tab-doc" href="#import-product-doc">Мои товары</a>
+				</div>
+				<div class="item-tab-doc">
+					<a class="link-tab-doc" href="#choice-market-doc">Мои магазины</a>
+				</div>
+			</div>
+		</div>
+		<!-- /// блок табов по документации -->
+
+
+		<!-- документация главной таблицы -->
+		<div class="wrap-documentation">
+			<!-- документация главной таблицы -->
+			<div class="inner-documentation" id="main-table-doc">
+				<div class="little-title-doc">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>Таблица
+				</div>
+				<h2 class="title-doc">Основная таблица с товарами.</h2>
+				<div class="contr-img-doc">
+					<img class="img-doc" src="../jpg-png-svg/main-table-doc.jpg" alt="основная таблица с товарами">
+				</div>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">1. Статистика</h3>
+					<p>
+						Основные данные о товарах из таблицы, распределённые по категориям. По нажатию на верхнюю часть блока
+						его можно свернуть и так же развернуть. В верхнем правом углу отображается дата последнего обновления
+						информации в данном блоке.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">2. Блок статистики</h3>
+					<p>
+						Блок с информацией по конкретному критерию. Здесь можно увидеть как общее количество товаров, так и на
+						определённых маркетплейсах.В правой части этого блока имеется список со значком маркет-плэйса
+						количеством товаров на нём и кнопкой "отфильтровать". С помощью этой кнопки вы отфильтровываете товары
+						по нужной вам категории на соответствующем маркет-плэйсе в таблице ниже.
+
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">3. Кнопка фильтра</h3>
+					<p>
+						Кнопка позволяет показать и скрыть фильтр таблицы по категориям.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">4. Фильтр</h3>
+					<p>
+						Фильтр помогает выбрать конкретные товары из таблицы по определённым тегам или категориям(бренд,
+						статус, название магазина и т.п.). Чтобы воспользоваться им, стоит сначала выбрать искомые категории,
+						потом нажать кнопку "применить", для сброса фильтра соответственно нажать кнопку "сбросить"
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">5. Поиск</h3>
+					<p>
+						Поиск по таблице по соответствующим тегам: артикул, бренд, название магазина, название товара и т.п.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">6. Кнопки переключения</h3>
+					<p>
+						Кнопки переключения между группами товаром находящихся на разных маркетплейсах. Кнопки переключения
+						соответствуют конкретному маркетплейсу исходя из логотипа изображённого на них.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">7. кнопка "+Товары"</h3>
+					<p>
+						Кнопка вызывает всплывающее окно, с помощью которого вы можете добавить товары в мониторинг, не
+						переходя на другую страницу.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">8. кнопка "Помощь"</h3>
+					<p>
+						Кнопка позволяет активировать подсказки или перейти на страницу документации содержащую подробную
+						информацию о данной таблице и других элемантах сервиса.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">9. Колонка "Товар"</h3>
+					<p>
+						Колонка содержащая основные данные о товаре: картинку, артикул, название.
+						Слева от слова "Товар" имеется чекбокс который позваоляет выбрать все сразу все товары или отменить
+						свой выбор.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">10. Колонка "Цена"</h3>
+					<p>
+						Текущая цена товара на маркетплейсе.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">11. Колонка "Позиция"</h3>
+					<p>
+						Информация о позиции вашего товара в рейтинге на маркетплейсе. В этой колонке могут находиться три
+						значения: "осн. предлож.", "топ доставка", "вне карт." и "вне карт.".<br>
+						Статус "осн. предлож."(основное предложение) - говорит о том что товар находится в верхнем блоке
+						карточки товара, он является самым выгодным предложением по цене и условиям доставки (способу, сроку и
+						стоимости).<br>
+						Статус "топ доставка" - говорит о том что товар является самым выгодным предложением условиям доставки
+						(способу, сроку и стоимости).<br>
+						Статус "топ предлож."(топ предложений) - говорит о том что товар находится в числе самых выгодных
+						предложений.<br>
+						Статус "вне карт."(вне карточки товара) - говорит о том что товар не попал ни в одну из описанных выше
+						категорий.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">12. Колонка "Конкуренты"</h3>
+					<p>
+						Колонка содержит данные о количестве конкурентов по текущему товару. Нажав на строку "развернуть" вы
+						увидите более подробную информацию.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">13. Колонка "мин.цена"</h3>
+					<p>
+						Минимальная цена на текущем маркетплейсе и название магазина поставляющего данный товар.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">14. Колонка "макс.цена"</h3>
+					<p>
+						Максимальная цена на текущем маркетплейсе и название магазина поставляющего данный товар.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">15. Колонка "Действия"</h3>
+					<p>
+						Инструменты для настройки, изменения и удаления товара.
+					</p>
+<pre>
+a) изменение
+b) редактирование
+c) удалить					
+</pre>
+				</section>
+			</div>
+			<!-- /// документация главной таблицы -->
+
+
+			<!-- блок документации -->
+			<div class="inner-documentation" id="import-product-doc">
+				<div class="little-title-doc">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					Мои товары
+				</div>
+				<h2 class="title-doc">Основная таблица с товарами.</h2>
+				<div class="contr-img-doc">
+					<img class="img-doc" src="../jpg-png-svg/import-product-doc.jpg" alt="основная таблица с товарами">
+				</div>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">1. Кнопка фильтра</h3>
+					<p>
+						Кнопка позволяет показать и скрыть фильтр таблицы по категориям.
+						Фильтр помогает выбрать конкретные товары из таблицы по определённым тегам или категориям(бренд,
+						статус, название магазина и т.п.). Чтобы воспользоваться им, стоит сначала выбрать искомые категории,
+						потом нажать кнопку "применить", для сброса фильтра соответственно нажать кнопку "сбросить"
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">2. Поиск</h3>
+					<p>
+						Поиск по таблице по соответствующим тегам: артикул, бренд, название магазина, название товара и т.п.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">3. Кнопки переключения</h3>
+					<p>
+						Кнопки переключения между группами товаром находящихся на разных маркетплейсах. Кнопки переключения
+						соответствуют конкретному маркетплейсу исходя из логотипа изображённого на них.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">4. "Загрузить"</h3>
+					<p>
+						Кнопка позволяет вызвать всплывающее окно содержащее форму загрузки товаров в данную таблицу.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">5. Отслеживать</h3>
+					<p>
+						Кнопка позволяет добавить товары из данной таблицы в таблицу во вкладке "Мониторинг".
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">6. колонка "Товар"</h3>
+					<p>
+						Колонка содержащая основные данные о товаре: картинку, артикул, название.
+						Слева от слова "Товар" имеется чекбокс который позваоляет выбрать все сразу все товары или отменить
+						свой выбор.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">6. колонка "Колонка"</h3>
+					<p>
+						Колонка содержащая.
+					</p>
+				</section>
+				<section class="section-doc">
+					<h3 class="subtitle-doc">6. колонка "Действия"</h3>
+					<p>
+						Колонка содержащая.
+					</p>
+				</section>
+			</div>
+
+			<div class="inner-documentation" id="choice-market-doc">
+				<div class="little-title-doc">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					Мои магазины
+				</div>
+
+			</div>
+			<!-- /// блок документации -->
+
+			<div class="inner-documentation" id="tariffs-doc">
+				<div class="little-title-doc">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					Мои магазины
+				</div>
+			</div>
+		</div>
+		<!-- /// блок документации -->
+
+
+
+	</div> <!-- /// Wrapper-body -->
+
+
+
+	<script>
+		let tabDoc = document.querySelectorAll('.link-tab-doc');
+		let innerDoc = document.querySelectorAll('.inner-documentation');
+
+		tabDoc.forEach((item) =>
+			item.addEventListener('click', function (e) {
+
+				e.preventDefault();
+				const id = item.getAttribute('href').replace('#', '');
+
+				tabDoc.forEach((it) => it.classList.remove('tab-doc-active'));
+				innerDoc.forEach((child) => child.classList.remove('inner-doc-active'));
+
+				item.classList.add('tab-doc-active');
+				document.getElementById(id).classList.add('inner-doc-active');
+			})
+		);
+
+		document.querySelector('.link-tab-doc').click();
+	</script>
+
+
+	<!-- toogle menu in header -->
+	<script>
+
+		const card = document.querySelector('.card');
+		const cardtoggle = document.querySelector('.toggle');
+		const navigation = document.querySelector('.card .content');
+
+		navigation.onclick = function () {
+			card.classList.toggle('active');
+		}
+		cardtoggle.onclick = function () {
+			card.classList.toggle('active');
+		}
+
+	</script>
+	<!-- /// toogle menu in header -->
+
+</body>
+
+</html>

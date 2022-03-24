@@ -1,0 +1,234 @@
+// шапка модального окна с таблицей			
+.modal-header
+	background-color: whitesmoke
+	border-bottom: none
+
+	.btn-close
+		border-radius: 3px
+		height: 30px
+		width: 30px
+		opacity: 1
+		right: 0
+		top: 0
+		font-size: 11px
+		transition: all 299ms linear
+
+		&:hover
+			background-color: white
+			box-shadow: none 
+
+	.modal-title
+		margin-left: 10px
+		text-align: left
+		font-size: 14px
+		font-weight: 400
+
+// подвал с кнопками модального окна с таблицей						
+.modal-footer
+	border: none
+	padding: 0
+	margin-bottom: 10px
+
+	button
+		font-size: 14px
+		height: 37px
+		border: none
+		border-radius: 5px
+		transition: all 0.1s
+
+	.btn-primary
+		margin: 10px 5px 10px auto
+		background-color: $green
+		transition: all 200ms linear
+
+		&:hover
+			background-color: $green-l
+
+	.btn-primary-import 
+		margin: 10px 5px 10px auto
+		background-color: #859ce8
+		transition: all 200ms linear
+
+		&:hover
+			background-color: #5679ec
+
+	.btn-secondary
+		margin: 10px 20px 10px 5px
+		border: 1px solid rgb(24, 28, 50)
+		color: rgb(24, 28, 50)
+		background-color: white
+		transition: all 200ms linear
+
+		&:hover			
+			background-color: #181c3220
+
+// табы таблицы
+.contr-tabs-table-modal
+	display: flex
+	justify-content: center
+
+	.tab-cont-modal
+		display: flex
+		text-align: center	
+		margin: 5px
+
+		.tab-table-modal
+			display: inline-block
+			height: 55px
+			width: 120px
+			border-radius: 7px
+			border: 1px dashed #181c32cc
+			padding: 16px
+			object-fit: contain
+			cursor: pointer
+			transition: all 0.2s	
+
+			&:hover
+				border: 1px solid #181c325c
+				background-color: #283f9714
+
+		.tab-sber-modal
+			padding: 9px
+
+		.tab-table-modal-active
+			border: 1px solid #181c325c
+			background-color: #283f9714
+
+// заголовки ячеек таблицы
+.table-list-header-m
+		width: 100%
+
+.row-header-m
+		position: relative	
+		font-size: 13px			
+		font-weight: 400		
+
+		.row-cont-m
+			display: flex
+			padding: 15px 10px
+			border-bottom: 1px dashed #3ba831
+			color: #789d53c7	
+			color: #808080ba	
+
+			.cell-header-m
+				text-align: center
+
+			.cell-header-m:first-child
+				text-align: start
+
+				.title-product-cell
+					margin-left: 88px
+
+// тело таблицы
+.table-list-body-m
+	width: 100%
+
+	.row-m
+		position: relative
+		padding: 10px
+		border-bottom: 1px dashed #bbbcc1
+		font-weight: 400
+		color: #666666	
+		background: white
+
+		&:last-child
+			border-bottom: none
+
+		.row-cont-m
+			display: flex
+			align-items: center
+
+			.cell-m
+				display: flex
+				justify-content: center
+				align-items: center
+				text-align: center
+				padding: 0 5px
+				font-size: 13px
+
+				.checkbox-row
+					position: relative
+					display: flex
+					align-items: center
+
+				.name-card
+					margin-left: 35px
+
+				.color-help
+					color: #808080ba 
+
+				&:first-child
+					justify-content: flex-start
+					padding: 0 0 0 31px
+		
+			.card-product-m
+				display: flex
+				text-align: left
+
+				.name-card
+					display: flex
+					align-items: flex-end
+					position: relative
+
+			.cell-icon-m
+				.fa
+					margin-right: 3px
+					line-height: 30px
+					width: 30px
+					color: grey
+					background-color: #f0f0f0
+					border-radius: 7px
+					text-align: center
+					cursor: pointer
+					transition: all 0.1s linear
+
+				.fa-sliders:hover
+						color: blue
+
+				.fa-pencil:hover
+						color: #b9a228
+
+				.fa-trash:hover
+						color: #ee7762
+
+// кастомный чекбокс
+.card-product-m
+	input	
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+
+	.checkbox-clone
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 20px
+		height: 20px
+		border: 1px solid #9998						
+		border-radius: 3px
+		cursor: pointer
+		transition: all 200ms linear
+
+		&:hover
+			border: 1px solid #59c61d	
+
+		.fa
+			color: white
+
+	input[type="checkbox"]:checked ~ .checkbox-clone
+			background-color: #59c61d
+
+// размер ячеек
+.cont-table-modal
+	.product-width
+		width: 40%
+
+	.price-width
+		width: 20%
+
+	.position-width
+		width: 20%
+
+	.action-width
+		width: 20%
+

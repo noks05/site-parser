@@ -1,0 +1,150 @@
+.contr-navigation-Sb
+	position: fixed
+	height: 375px
+	width: 100px
+	margin-top: 110px
+	z-index: 1010
+
+	.contr-tutorial-item-first
+		position: absolute
+		top: 120px
+		left: 18px
+
+	.contr-tutorial-item-second
+		position: absolute
+		top: 190px
+		left: 18px
+
+	.contr-tutorial-item-third
+		position: absolute
+		top: 250px
+		left: 18px
+
+	.contr-tutorial-item-fourth
+		position: absolute
+		top: 310px
+		left: 18px
+
+	.contr-tutorial-item-last
+		position: absolute
+		top: 370px
+		left: 18px
+
+.navigation-Sb
+	position: fixed
+	height: 375px
+	width: 100px
+	margin-top: 0
+	border-radius: 0 10px 10px 0
+	box-shadow: 0 0 3px 1px #4c751540
+	background: #fafafa
+	transition: 0.5s
+	overflow: hidden
+	z-index: 1000
+
+.navigation-Sb:hover,
+.navigation-Sb.active
+	width: 280px
+
+.navigation-Sb
+	.TopBlock
+		display: block
+		position: relative
+		height: 60px
+
+		.Logo
+			position: relative
+			display: block
+			min-width: 60px
+			height: 60px
+			line-height: 60px
+			text-align: center
+			z-index: 20
+			background: #181c32
+
+	ul
+		position: relative
+		top: 0
+		left: 0
+		width: 100%
+		padding-left: 0
+
+		li
+			position: relative
+			width: 100%
+			list-style: none	
+
+		.li-active
+			background: #4d6453
+			a
+				color: white 
+
+		li
+			a
+				position: relative
+				display: block
+				width: 100%
+				display: flex
+				text-decoration: none
+				color: #181c32
+
+				.icon
+					position: relative
+					display: block
+					min-width: 100px
+					height: 60px
+					line-height: 60px
+					text-align: center
+
+					.fa
+						font-size: 19px
+						color: #878b9b
+
+				.title
+					position: relative
+					display: block
+					height: 60px
+					padding: 0 10px
+					text-align: start
+					white-space: nowrap
+					line-height: 60px
+					color: #878b9b
+
+
+		li:hover:not(.li-active)
+			background: #8cb396
+
+			.fa,
+			.title
+				color: white
+
+.navigation-Sb 
+	.TopBlock 
+		.toggle
+			display: block
+			position: absolute
+			top: 0
+			right: 20px
+			height: 60px
+			width: 60px	
+			cursor: pointer
+			transition: right 0.5s ease-in-out
+
+		.toggle:before
+			content: '\f13e'
+			font-family: fontAwesome
+			position: absolute
+			width: 100%
+			height: 100%
+			line-height: 60px
+			text-align: center
+			font-size: 18px
+			color: #8cb396
+			z-index: 100
+
+		.toggle.active:before
+			content: '\f023' 
+
+		.toggle.active
+			right: 0 
+

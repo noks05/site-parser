@@ -1,0 +1,825 @@
+.tooltip-inner
+	text-align: start
+	display: inline-block
+	box-shadow: 0 0 10px 3px #9999
+	max-width: 400px
+
+.wrapper-main-table
+	position: relative
+	width: 100%
+	min-height: 100vh
+	padding-bottom: 10px
+
+	.container-main-table
+		position: relative
+		display: block
+		max-width: 1300px
+		margin: 0 auto 200px
+		background: white
+		border-radius: 10px
+		box-shadow: 0 3px 10px #e7f1e7
+
+		@media(max-width: 1525px)
+			margin: 100px 10px 200px 110px
+		
+		.contr-addproduct-and-help
+			display: flex
+			justify-content: flex-end
+
+		.help-contr
+			position: relative
+
+		.help-all-table
+			position: relative
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 100px
+			height: 40px
+			margin-left: 10px
+			border: none
+			border-radius: 5px
+			font-size: 14px
+			text-decoration: none
+			color: #a2a2a2
+			background-color: #eee
+			transition: all 100ms linear
+			cursor: pointer
+
+			.fa 
+				margin-left: 3px
+
+			&:hover
+				background-color: #dbdbdb
+
+		.contr-list-help
+			position: absolute
+			top: 41px
+			right: 0px
+			height: 0px
+			width: 100px
+			border-radius: 7px
+			overflow: hidden
+			font-size: 14px
+			background: #eeeeee
+			color: #9e9e9e
+			transition: height .2s linear
+			cursor: pointer
+			z-index: 10
+
+			.row-help					
+				padding: 10px 15px 0
+
+				&:hover
+					color: grey
+
+					.link-doc-table
+						color: grey
+
+		.contr-list-help-ative
+			height: 74px
+
+		.download-product
+			display: inline-flex
+			align-items: center
+			width: 100px
+			height: 40px
+			border: 1px dashed $green
+			border-radius: 5px
+			font-size: 14px
+			color: $green
+			background-color: white
+			transition: all 100ms linear	
+
+			&:hover
+				background-color: #dee6c8
+			
+			.fa
+				margin-right: 3px
+
+
+	.list-main-table
+		input			
+			display: none
+
+		.checkbox-clone
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 20px
+			height: 20px
+			border: 1px solid #9998						
+			border-radius: 3px
+			cursor: pointer
+			transition: all 200ms linear
+
+			&:hover
+				border: 1px solid #9acd32
+
+			.fa
+				color: white
+
+	input[type="checkbox"]:checked ~ .checkbox-clone
+			background-color: #9acd32
+
+// контейнер шапки таблицы, в котором навигация, табы и кнопка помщь и +товары
+.contr-nav-tabs-add-t
+	padding: 20px
+
+	.cntr-n-t-a
+		display: flex
+		align-items: flex-end
+
+	.contr-nav-search
+		display: flex
+
+	.item-head-table
+		width: 33.3%
+
+	.but-category-nav
+		margin-right: 20px
+
+		.but-toggle-menu-category:hover
+			background-color: rgba(100, 100, 100, .5)
+			background-color: #dbdbdb					
+		
+		.but-toggle-menu-category-active
+			background-color: rgba(100, 100, 100, .5)
+			background-color: #dbdbdb
+
+
+// Табы по Маркет-плэйсам
+.container-main-table
+	.tabs-main-table
+		display: flex
+		justify-content: center
+
+	.item-tabs
+		display: flex
+		text-align: center
+		margin-right: 10px
+		cursor: pointer
+
+		&:last-child
+			margin-right: 0
+
+		.content-item-tabs
+			display: inline-block
+			border-radius: 7px
+			border: 1px dotted #181c32cc
+			padding: 19px
+			width: 120px
+			height: 55px
+			object-fit: contain
+
+			&:hover				
+				border: 1px solid #181c325c	
+
+		.content-item-tabs-sber
+			padding: 14px
+
+		.content-item-tabs-wild
+			padding: 16px
+
+// ///Табы по Маркет-плэйсам
+
+
+// блок с навигацией
+.table-navigation
+	display: none
+	padding: 0
+	padding-top: 20px
+
+.contr-nav-tabs-add-t-active
+	.table-navigation
+		display:  block
+
+.table-nav-category
+	display: flex
+	align-items: center
+
+.main-table-nav-category
+	margin-right: 20px
+
+.nav-item
+	position: relative
+
+	.category-name
+		font-size: 12px
+		color: #808080ba
+
+	.category-value
+		display: flex
+		align-items: center
+		text-decoration: none
+		font-size: 14px
+		color: #6d931f
+		cursor: pointer
+
+		.category-value-text
+			overflow: hidden
+			text-overflow: ellipsis
+			white-space: nowrap
+
+		.fa
+			margin-left: 7px
+
+	.category-row-text
+		padding-left: 20px
+
+	.dropdown-list-category
+		position: absolute
+		bottom: -56px
+		display: none
+		border: 1px solid #d5d5d5
+		border-radius: 5px
+		font-size: 14px
+		color: #6d931f
+		background-color: white
+		cursor: pointer
+		z-index: 10
+
+		.category-contr
+			display: flex
+
+		.checkbox-contr
+			position: relative
+			display: flex
+			padding: 10px
+			align-items: center
+			cursor: pointer
+			z-index: 30
+
+		input				
+			display: none
+
+		input[type="checkbox"]:checked ~ .checkbox-clone
+			background-color: #6d931f
+
+		.checkbox-clone
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 20px
+			height: 20px
+			border: 1px solid #9998						
+			border-radius: 3px
+			transition: all 200ms linear
+
+			&:hover
+				border: 1px solid #6d931f	
+
+			.fa
+				display: inline-block
+				font-size: 13px
+				color: white
+
+
+.nav-item-active
+	.dropdown-list-category
+		display: flex
+
+.but-contr
+	.filter-on
+		width: 100%
+		padding: 0 10px
+		color: #6d931f
+		background-color: #6d931f30
+
+		&:hover
+			background-color: #6d931f
+			color: white
+
+	.filter-off
+		width: 100%
+		padding: 0 10px
+		color: #a2a2a2
+		background-color: #e1e1e161
+
+		&:hover
+			background-color: #e1e1e199
+			color: #6d931f
+
+
+.table-nav-search
+	position: relative
+	max-width: 250px
+
+	.search-table
+		height: 40px
+		max-width: 100%
+		border-radius: 5px
+		border: 1px solid #a6a6a654
+		padding-left: 10px
+		padding-right: 30px
+		text-overflow: ellipsis
+		transition: all 100ms linear
+
+		&:hover
+			border: 1px solid #6d931f74
+
+		&::placeholder
+			font-size: 14px
+			color: #999989
+
+	input[type="search"]:focus				
+		outline: none
+
+	form
+		position: relative
+
+		.fa
+			position: absolute
+			right: 10px
+			color: #a6a6a654
+			line-height: 38px
+			cursor: pointer
+			transition: all 100ms linear
+
+			&:hover
+				color: #6d931f74	
+// ///блок с навигацией
+
+
+/*основные блоки таблицы*/
+.content-main-table
+	display: block
+	max-width: 1300px
+	margin: 0 auto
+	padding: 20px
+	background: rgba(255, 255, 255, 0.3)
+
+	.main-offer
+		&:before
+			content: 'осн.предлож.'
+			padding: 5px
+			border-radius: 5px
+			background-color: rgba(86, 222, 108, 0.3)
+
+	.top-delivery
+		&:before
+			content: 'топ доставка'
+			padding: 5px
+			border-radius: 5px
+			background-color: rgba(12, 155, 255, 0.3)
+
+	.top-offer
+		&:before
+			content: 'топ предлож.'
+			padding: 5px
+			border-radius: 5px
+			background-color: rgba(255, 255, 0, 0.3)
+
+	.out-top
+		&:before
+			content: 'вне карт.'
+			padding: 5px
+			border-radius: 5px
+			background-color: rgba(249, 41, 41, 0.3)
+/* ///основные блоки таблицы*/
+
+
+/*Всё о header*/
+.content-main-table
+	.list-main-table-header
+		list-style: none
+		width: 100%
+
+		.row-main-table-h
+			position: relative	
+			font-size: 14px			
+			font-weight: 400			
+
+		.cont-row-h
+			display: flex
+			padding: 15px 10px
+			border-bottom: 1px dashed #3ba831
+			color: #789d53c7	
+			color: #808080ba	
+
+			.cell-h
+				text-align: center
+
+			.cell-h:first-child
+				text-align: start
+
+				.title-table-product
+					padding-left: 53px
+/*  ///Всё о header*/
+
+
+
+
+
+
+/*Всё о body-таблицы(кроме строк с конкурентами)*/
+.content-main-table
+	.list-main-table-body
+		list-style: none
+		width: 100%
+
+		.row-main-table
+			position: relative
+			padding: 10px
+			border-bottom: 1px dashed #bbbcc1
+			font-weight: 400
+			color: #666
+			background: white
+
+			&:last-child
+				border-bottom: none
+
+			.cont-row
+				display: flex
+				align-items: center
+
+				.checkbox-row
+					position: relative
+					display: flex
+					align-items: center
+					margin-right: 47px
+
+				.cell
+					align-items: center
+					text-align: center
+					padding: 0 5px
+					font-size: 13px
+
+					.color-help
+						color: #808080ba 
+
+				.cell:first-child
+					justify-content: flex-start
+					padding: 0 0 0 31px
+			
+				.card-product
+					display: flex
+					text-align: left
+
+					.foto-card					
+						width: 70px
+						height: 70px
+						margin-right: 23px						
+
+						img
+							background-image: url('https://vk.com/im?sel=42224413&z=photo42224413-457239725%2Fmail359735')
+							width: 70px
+							height: 70px
+							object-fit: contain
+
+					.name-card
+						display: flex
+						align-items: flex-end
+						position: relative
+
+				.cell-icon
+					.fa
+						margin-right: 3px
+						line-height: 30px
+						width: 30px
+						color: grey
+						background-color: #f0f0f0
+						border-radius: 7px
+						text-align: center
+						cursor: pointer
+						transition: all 0.1s linear
+
+					.fa-sliders:hover
+							color: blue
+
+					.fa-pencil:hover
+							color: #b9a228
+
+					.fa-trash:hover
+							color: #ee7762
+/*  ///Всё о body-таблицы(кроме строк с конкурентами)*/
+
+
+/*Всё о строках с конкурентами*/
+.row-main-table 
+	.list-konk		
+		position: relative /*relative-for drop down*/
+		list-style: none
+		font-size: 13px		
+		width: 100%
+		padding: 10px
+		margin: 15px
+		background: #7ca8422b
+		border-radius: 4px	
+		left: 0
+		top: 0
+		display: none
+		transition: transform 1s
+
+		.list-konk-green
+			background: #7ca8422b
+
+		.list-konk-red
+			background: #a8424221
+
+		.row-k-h
+			.cont-row-k-h
+				display: flex
+				align-items: center
+				padding: 5px 20px
+				color: #2b6a3e
+				color: #a2a2a2
+
+				.cell-k-h
+					text-align: center
+
+				.cell-k-h:first-child
+					text-align: left
+
+					span
+						margin-left: 97px
+
+		.row-k
+			position: relative	
+			background: white
+			padding: 10px
+			margin: 5px
+			border: 1px solid rgba(0, 0, 0, 0.1)
+			border-radius: 4px
+
+			.cont-row-k
+				display: flex
+				align-items: center
+				background: white
+
+				.cell-k
+					text-align: center
+					padding: 0 5px
+					color: #7F7F80
+
+				.cell-k:first-child
+					display: flex
+
+				.cell-icon
+					.fa
+						margin-right: 3px
+						line-height: 27px
+						width: 27px
+						font-size: 90%
+						color: grey
+						background-color: #f0f0f0
+						border-radius: 7px
+						text-align: center
+						cursor: pointer
+						transition: all 0.2s ease-in-out
+
+						&:hover
+							color: #e8658a
+
+				.card-product
+					display: flex					
+					text-align: left
+					color: #666666
+
+					.checkbox-row
+						position: relative
+						display: flex
+						align-items: center
+						margin-right: 47px
+
+						input[type="checkbox"]:checked ~ .checkbox-clone
+							background-color: #8d9589
+
+						.checkbox-clone
+							width: 17px
+							height: 17px
+
+							.fa
+								display: inline-block
+								font-size: 12px
+
+					.foto-card
+						width: 70px
+						height: 70px
+
+						img
+							width: 70px
+							height: 70px
+							object-fit: contain				
+
+.list-konk.konk-active
+	display: block
+
+.dropdown-menu-k
+	cursor: pointer
+
+.konk-readr-more-contr
+	margin-left: 15px
+	padding: 5px
+	font-size: 90%
+	color: grey
+	background-color: white
+	transition: all 0.2s
+
+	&:hover 
+		border-radius: 5px
+		background-color: #80808029
+
+	.konk-readr-more
+		&:before
+			content: 'Развернуть'
+
+.toggle-menu-k
+	display: inline-flex
+	position: relative
+	top: 1px
+	width: 13px
+	height: 13px
+	justify-content: center
+	align-items: center
+	border-radius: 5px
+
+	.fa
+		cursor: pointer
+		font-size: 105%		
+		color: #181c32
+		transition: all 0.2s
+/*  ///Всё о строках с конкурентами*/
+  
+
+/*js манипуляции*/
+.content-main-table
+	display: none
+
+.tabs-main-table
+	.item-tabs
+		.content-item-tabs-active
+			pointer-events: none
+			border: 1px solid #181c325c
+			background-color: #283f9714	
+
+.content-main-table-active
+	display: block
+
+.konk-active
+	.konk-readr-more-contr
+		border-radius: 5px
+		background-color: #80808029
+
+	.toggle-menu-k
+		.fa:before
+			content: '\f102'
+
+	.konk-readr-more
+		&:before
+			content: 'Скрыть'
+/*  ///js манипуляции*/
+
+
+.list-konk
+	.product-width
+		width: 25%
+
+	.price-width
+		width: 15%
+
+	.position-width
+		width: 15%
+
+	.min-price-width
+		width: 15%
+		
+	.max-price-width
+		width: 15%
+
+	.action-width
+		width: 15%
+
+.product-width
+	width: 30%
+	padding-left: 32px
+
+.price-width
+	width: 10%
+
+.position-width
+	width: 10%
+	
+.konk-width
+	width: 20%
+	
+.min-price-width
+	width: 10%
+	
+.max-price-width
+	width: 10%
+
+.action-width
+	width: 10%
+	
+
+// Модальное окно для редактирования столбика в таблице
+.modal-edit-cell
+	.modal-dialog
+		max-width: 400px
+		border-radius: 10px
+		box-shadow: 0 3px 5px 1px #9997
+
+	.modal-content
+		text-align: center
+		border: none
+
+.modal-header
+	position: relative
+	text-align: left
+	justify-content: normal
+	background-color: whitesmoke
+	border: none
+
+	.btn-close					
+		border-radius: 3px
+		height: 30px
+		width: 30px
+		opacity: 1
+		right: 0
+		top: 0
+		font-size: 11px
+		transition: all 299ms linear
+
+		&:hover
+			background-color: white
+			box-shadow: none 
+
+	.modal-title
+		font-size: 14px
+		font-weight: 400
+		margin-left: 13px
+
+		.fa 
+			font-size: 13px
+			color: #808080ba
+
+.modal-body
+	padding: 20px
+	border-radius: 10px
+
+	.input-edit-cell
+		height: 35px
+		width: 100%
+		padding-left: 10px
+		margin-bottom: 20px
+		border-radius: 5px
+		border: 1px solid #d8d6de
+		outline: none 
+
+	input[type=text]:focus
+		outline: none		
+		border: 1px solid #698e1c				
+
+	.modal-window-text
+		font-size: 14px
+		font-weight: 400
+		margin-bottom: 5px
+		text-align: start
+		padding-left: 10px
+		color: grey
+
+.modal-footer
+	border: none
+	padding: 0
+	margin-bottom: 10px
+
+.add-all-cont-main-table
+	color: $green
+
+
+
+.status-loader
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	margin-bottom: 10px
+
+.status-loader-text
+	margin-bottom: 10px
+
+.loader
+	position: relative
+	max-width: 230px
+	width: 100%
+
+.loading 
+	position: relative
+	width: 100%
+	height: 10px
+	border: 1px solid yellowgreen
+	border-radius: 10px
+
+	&:before 
+		content: ""
+		position: absolute
+		display: block
+		width: 0
+		height: 100%
+		background-color: yellowgreen
+		transition: all 1.5s ease-in-out
+
+	&:hover:before 
+		width: 100%
+        
+  

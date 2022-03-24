@@ -1,0 +1,147 @@
+#form2
+	left: 500px  	
+
+.Wrap-MultiStep-Form
+	min-height: 100vh
+	overflow: hidden
+
+	.card-multistep-form
+		position: relative	
+		max-width: 445px
+		min-height: 561px
+		margin: 100px auto auto
+		border-radius: 10px
+		background: white
+		box-shadow: 0 0 20px rgba(0,0,0,0.1)
+		overflow: hidden
+
+	.multistep-form
+		position: absolute
+		top: 61px
+		left: 28px
+		width: 391px
+		padding-top: 26px
+		font-size: smaller
+		transition: 0.5s				
+	
+		.text-f
+			position: relative
+			display: block
+			margin-bottom: 20px
+			text-align: center
+			font-size: 13px
+			font-weight: 400
+			color: #999
+
+		.form-contr-login
+			margin-bottom: 37px
+
+		.form-contr-login1
+			margin-bottom: 210px
+
+		.label-login-form-item-textarea
+			min-height: 234px
+
+		.form-multi-castom
+			padding: 10px
+
+			&::placeholder
+				font-size: 14px
+
+		.contr-input-radio-multi
+			display: flex
+			justify-content: center
+			margin-bottom: 19px
+
+		.radio-box-multi
+			display: flex
+			align-items: center
+			margin-right: 10px
+			padding: 20px
+			border: 1px solid rgba(0, 0, 0, 0.1)
+			border-radius: 5px
+			cursor: pointer
+
+			&:last-child
+				margin-right: 0
+
+		.radio-box-multi-wb
+			padding: 0 20px
+
+		.market-radio-multi
+			width: 47px
+			margin-right: 10px
+
+		.market-radio-multi-wb
+			width: 80px
+
+		.radio-item-multi
+			cursor: pointer
+
+		.contr-btn-multistep
+			width: 100%
+			text-align: center
+
+		.btn-multistep-back
+			margin-right: 10px
+
+		.btn-multistep
+			height: 40px
+			padding: 0 40px
+			border: none
+			border-radius: 5px
+			color: white	
+			background: yellowgreen
+			cursor: pointer	
+			transition: all 0.1s
+
+			&:hover
+				background-color: #82ae28
+
+	.value-true-multi,
+	.form-login:focus	
+		outline: none
+
+		& ~ .text-form-login
+			transform: translateY(-5px) scale(.6)
+			cursor: default
+
+#Back	
+	background-color: #a2a4ad
+
+	&:hover
+		background-color: #898a91
+///элементы содежимого формы 
+
+
+/*панель с "шаг 1" и "шаг 2"*/
+.Wrap-MultiStep-Form
+	.card-multistep-form 
+		.step-row
+			height: 50px
+			display: flex
+			align-items: center
+			background: rgb(162, 164, 173)
+			position: relative
+
+			.step-col
+				width: 50%
+				text-align: center
+				position: relative
+				color: white
+				font-weight: bold
+				font-size: 1em
+
+			.line-step-col
+				width: 1px
+				height: 88%
+				background: rgba(255, 255, 255, 0.5)
+				z-index: 1000
+
+#progress
+	position: absolute
+	height: 100%
+	width: 50%
+	transition: width 1s 0.1s
+	background: yellowgreen
+/* ///панель с "шаг 1" и "шаг 2"*/

@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Site-Parser</title>
+	<link rel="icon" href="../jpg-png-svg/favicon-top.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/steptip.css" />
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+
+	<div class="Wrapper-body">
+
+
+		<!-- header - шапка сайта -->
+		<div class="header">
+			<div class="container1">
+				<div class="Logo">
+					<div class="imgBx">
+						<a href="../../index.html">
+							<span>
+								<i class="fa fa-ravelry" aria-hidden="true"></i>
+							</span>
+						</a>
+					</div>
+					<a href="../../index.html"><span class="Logo2part">Servise Parser</span></a>
+				</div>
+
+				<ul>
+					<li><span class="tach"><a href="tariffs.html">Мой тариф: <span
+									class="Free">Пробный</span></a></span></li>
+					<li><span class="tach"><a class="up-tariff" href="tariffs-copy.html">Улучшить</a></span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="container2">
+				<div class="colokol">
+					<a class="colokol-cont" href="#">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="card">
+					<div class="content">
+						<div class="imgBx">
+							<span class="icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+							</span>
+						</div>
+						<h2>pochta@mail.ru</h2>
+					</div>
+
+					<div class="header-contr-navigation">
+						<ul class="navigation">
+							<li>
+								<a href="setting-profile.html">
+									<i class="fa fa-user-o" aria-hidden="true"></i>
+									Профиль
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-usd" aria-hidden="true"></i>
+									Мой тариф
+								</a>
+							</li>
+							<li>
+								<a href="documentation.html">
+									<i class="fa fa-question" aria-hidden="true"></i>
+									Помощь
+								</a>
+							</li>
+							<li>
+								<a href="login-form.html">
+									<i class="fa fa-sign-out" aria-hidden="true"></i>
+									Выйти
+								</a>
+							</li>
+						</ul>
+					</div>
+
+
+					<div class="toggle">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ///header - шапка сайта -->
+
+
+
+		<!-- SideBar - навигация слева сбоку -->
+		<div class="contr-navigation-Sb">
+
+
+			<div class="contr-tutorial-item-first">
+				<div class="tutorial-parent-block" id="first"></div>
+			</div>
+			<div class="contr-tutorial-item-second">
+				<div class="tutorial-parent-block" id="second"></div>
+			</div>
+			<div class="contr-tutorial-item-third">
+				<div class="tutorial-parent-block" id="third"></div>
+			</div>
+			<div class="contr-tutorial-item-fourth">
+				<div class="tutorial-parent-block" id="fourth"></div>
+			</div>
+			<div class="contr-tutorial-item-last">
+				<div class="tutorial-parent-block" id="last"></div>
+			</div>
+
+
+			<div class="navigation-Sb">
+				<div class="TopBlock">
+					<div class="toggle" onclick="toggleMenu(event)">
+					</div>
+				</div>
+				<ul>
+					<li class="navigation-sb-li">
+						<a href="../../index.html">
+							<div class="icon">
+								<i class="fa fa-table" aria-hidden="true"></i>
+							</div>
+							<div class="title">Мониторинг</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="import-products.html">
+							<div class="icon">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>
+							<div class="title">Мои товары</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="choice-market-place.html">
+							<div class="icon">
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							</div>
+							<div class="title">Мои магазины</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="tariffs-copy.html">
+							<div class="icon">
+								<i class="fa fa-usd" aria-hidden="true"></i>
+							</div>
+							<div class="title">Тарифы</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="documentation.html">
+							<div class="icon">
+								<i class="fa fa-question" aria-hidden="true"></i>
+							</div>
+							<div class="title">Помощь</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<!-- ///SideBar - навигация слева сбоку  -->
+
+
+
+
+		<!-- Multi-Step-Form -приветствие  -->
+		<div class="Wrap-MultiStep-Form">
+
+			<div class="card-multistep-form">
+
+
+				<form class="multistep-form multistep-form1" id="form1">
+					<span class="text-f">
+						Заполните форму, и бесплатно отслеживайте пять товаров уже сегодня.*
+					</span>
+					<div class="form-contr-login form-contr-login1">
+						<div class="contr-input-radio-multi">
+							<label class="radio-box-multi">
+								<img class="market-radio-multi" src="../jpg-png-svg/YM.svg" alt="выбрать яндекс маркет">
+								<input class="radio-item-multi" type="radio" name="market-place" value="yandex">
+							</label>
+							<label class="radio-box-multi">
+								<img class="market-radio-multi" src="../jpg-png-svg/SM1.png" alt="выбрать сбер маркет">
+								<input class="radio-item-multi" type="radio" name="market-place" value="sber">
+							</label>
+							<label class="radio-box-multi radio-box-multi-wb">
+								<img class="market-radio-multi market-radio-multi-wb" src="../jpg-png-svg/WB.png" alt="выбрать ваилдбериез">
+								<input class="radio-item-multi" type="radio" name="market-place" value="wild">
+							</label>
+						</div>
+						<label class="label-login-form-item ">
+							<input class="form-login form-authorization-multi form-multi-castom" type="text"
+								name="name-Magazine" placeholder="Название вашего магазина" required>
+							<!-- <span class="text-form-login">Название вашего магазина</span> -->
+						</label>
+					</div>
+					<div class="contr-btn-multistep">
+						<button class="btn-multistep" type="button" id="Next">
+							Вперёд
+						</button>
+					</div>
+				</form> <!-- multistep-form1 -->
+
+
+				<form class="multistep-form multistep-form2" id="form2">
+					<span class="text-f">
+						Оповещения будут приходить на телеграм с краткой информацией.*
+					</span>
+					<div class="form-contr-login">
+						<label class="label-login-form-item label-login-form-item-textarea">
+							<!-- <input class="form-login form-authorization-multi" type="search"  name="name-Magazine" required> -->
+							<textarea class="form-login form-authorization-multi form-multi-castom" name="name-Magazine"
+								placeholder="Вставьте ссылки на товары" required></textarea>
+							<!-- <span class="text-form-login">Ссылки на товары</span> -->
+						</label>
+						<label class="label-login-form-item">
+							<input class="form-login form-authorization-multi form-multi-castom" type="text" name="tell-number"
+								placeholder="Телеграмм" required>
+							<!-- <span class="text-form-login">Телеграмм</span> -->
+						</label>
+					</div>
+					<div class="contr-btn-multistep">
+						<button class="btn-multistep btn-multistep-back" type="button" id="Back">
+							Назад
+						</button>
+						<button class="btn-multistep" type="Submit" name="Submit" value="FreeTariff-info">
+							Вперёд
+						</button>
+					</div>
+				</form><!-- multistep-form2 -->
+
+				<div class="step-row">
+					<div id="progress"></div>
+					<div class="step-col"><small>Шаг 1</small></div>
+					<div class="line-step-col"></div>
+					<div class="step-col"><small>Шаг 2</small></div>
+				</div>
+
+
+			</div> <!-- card-MultiStep-Form -->
+
+		</div> <!-- wrap-MultiStep-Form  -->
+		<!-- ///Multi-Step-Form -приветствие  -->
+
+
+
+
+
+
+		<!-- TableProduct - таблица с товарами  -->
+		<!-- ///TableProduct - таблица с товарами  -->
+
+
+
+
+
+		<!-- tariffs - Мой Тариф\Тарифы\История платежей  -->
+		<div class="wrapper">
+
+			<!-- <div class="container2"> -->
+			<div class="container">
+
+
+				<div class="Dynamic-Tabs">
+					<div class="tabs-cont">
+						<a href="#tab-1" class="tabs-a">Мой Тариф</a>
+					</div>
+					<div class="tabs-cont">
+						<a href="#tab-2" class="tabs-a">Тарифы</a>
+					</div>
+					<div class="tabs-cont">
+						<a href="#tab-3" class="tabs-a">История платежей</a>
+					</div>
+				</div>
+
+
+
+
+
+				<!-- <input type="radio" id="tabsMyTariff" name="mytabs" checked="checked">
+				<label for="tabsMyTariff">Мой Тариф</label> -->
+
+				<div id="tab-1" class="tabs-a-content">
+					<div class="wrap-card-my-Tarif">
+						<div class="card-my-Tarif">
+							<ul class="tarif-info">
+								<li>Тариф - Стандарт</li>
+								<li>Осталось - 30 дней(до 30.11.21)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+
+				<!--  <input type="radio" id="tabstariffs" name="mytabs">
+				<label for="tabstariffs">Тарифы</label> -->
+				<div id="tab-2" class="tabs-a-content">
+					<div class="Tariff-container">
+						<div class="tariff-list-part1">
+							<div class="tariff-list-part1-ul">
+								<ul>
+									<li class="checkboxx" data-id="info-tariff-block-1">
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-bookmark" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+
+											<span class="money">0 ₽</span>
+											<div class="flag-cmall"><input type="checkbox" class="checkboxx1"
+													data-id="info-tariff-block-1" name="checkbox-tariff" value="checkbox-tariff">
+											</div>
+										</div>
+									</li>
+									<li class="checkboxx" data-id="info-tariff-block-2">
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-bookmark" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+
+											<span class="money">0 ₽</span>
+											<div class="flag-cmall"><input type="checkbox" class="checkboxx1"
+													data-id="info-tariff-block-2" name="checkbox-tariff" value="checkbox-tariff">
+											</div>
+										</div>
+									</li>
+									<li class="checkboxx" data-id="info-tariff-block-3">
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-bookmark" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+
+											<span class="money">0 ₽</span>
+											<div class="flag-cmall"><input type="checkbox" class="checkboxx1"
+													data-id="info-tariff-block-3" name="checkbox-tariff" value="checkbox-tariff">
+											</div>
+										</div>
+									</li>
+									<li class="checkboxx" data-id="info-tariff-block-4">
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-bookmark" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+
+											<span class="money">0 ₽</span>
+											<div class="flag-cmall"><input type="checkbox" class="checkboxx1"
+													data-id="info-tariff-block-4" name="checkbox-tariff" value="checkbox-tariff">
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="cont-button">
+								<button>Продолжить</button>
+							</div>
+						</div>
+
+
+						<div class="tariff-list-part2">
+							<div class="tariff-list-part2-ul" id="info-tariff-block-1">
+								<ul>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий1111</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="tariff-list-part2-ul" id="info-tariff-block-2">
+								<ul>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий2222</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="tariff-list-part2-ul" id="info-tariff-block-3">
+								<ul>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий3333</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="tariff-list-part2-ul" id="info-tariff-block-4">
+								<ul>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий4444</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content-li">
+											<div class="icon-text">
+												<div class="icon">
+													<span>
+														<i class="fa fa-heart-o" aria-hidden="true"></i>
+													</span>
+												</div>
+												<div class="text">
+													<h4>Лёгкий</h4>
+													<div>3000 товаров</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div> <!-- /// tariff-list-part2-ul -->
+
+							<div class="wrapper-range">
+								<div class="text-range">
+									<p>*Вы можете добавить произвольное кол-во товаров к основному пакету через ползунок или
+										вручную*
+									</p>
+								</div>
+								<div class="input-range">
+									<input type="range" name="rangeSlide" value="0" min="0" max="10000"
+										onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+									<div class="nolj-cont">
+										<span class="rangeValue0">0</span>
+										<span class="rangeValue0">10.000</span>
+									</div>
+
+								</div>
+								<div class="form-range">
+									<div class="form-range-part1">
+										<span class="text-form1">Добавить вручную</span>
+										<input type="text" id="formSlider" name="inputPay" value="0" placeholder="0">
+										<span class="rub-tov">товаров</span>
+									</div>
+									<div class="form-range-part2">
+										<span class="text-form2">Итоговая Цена</span>
+										<input type="text" name="inputPay" value="0" placeholder="0">
+										<span class="rub-tov">₽</span>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div> <!-- tariff-list-part2 -->
+
+					</div>
+					<!--Tariff-container -->
+				</div>
+
+
+				<div id="tab-3" class="tabs-a-content">
+					<div class="payment-history-cnt">
+						<ul class="payment-history-list-header">
+							<li class="payment-history-row-header">
+								<span class="payment-history-field">Номер платежа</span>
+								<span class="payment-history-field">Дата</span>
+								<span class="payment-history-field">Тип платежа</span>
+								<span class="payment-history-field">Счет списания</span>
+								<span class="payment-history-field">Сумма</span>
+								<span class="payment-history-field">Статус</span>
+							</li>
+						</ul>
+						<ul class="payment-history-list">
+							<li class="payment-history-row payment-history-row-hover">
+								<span class="payment-history-field">O5099197</span>
+								<span class="payment-history-field">01.10.2021 01:13</span>
+								<span class="payment-history-field">Списание по тарифу</span>
+								<span class="payment-history-field">Личный счет</span>
+								<span class="payment-history-field">10 ₽</span>
+								<span class="payment-history-field">Исполнен</span>
+							</li>
+							<li class="payment-history-row payment-history-row-hover">
+								<span class="payment-history-field">O5099197</span>
+								<span class="payment-history-field">01.10.2021 01:13</span>
+								<span class="payment-history-field">Списание по тарифу</span>
+								<span class="payment-history-field">Личный счет</span>
+								<span class="payment-history-field">10 ₽</span>
+								<span class="payment-history-field">Исполнен</span>
+							</li>
+							<li class="payment-history-row payment-history-row-hover">
+								<span class="payment-history-field">O5099197</span>
+								<span class="payment-history-field">01.10.2021 01:13</span>
+								<span class="payment-history-field">Списание по тарифу</span>
+								<span class="payment-history-field">Личный счет</span>
+								<span class="payment-history-field">10 ₽</span>
+								<span class="payment-history-field">Исполнен</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+			</div>
+			<!--container -->
+
+		</div> <!-- wrapper   -->
+		<!-- ///tariffs - Мой Тариф\Тарифы\История платежей   -->
+
+
+
+
+	</div> <!-- Wrapper-body -->
+
+
+	<script src="../js/popper.min.js">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+	</script>
+	<script src="../js/steptip.js"></script>
+
+
+	<!-- прелоадер -->
+	<script>
+		window.onload = function () {
+			document.body.classList.add('loaded-hiding');
+			window.setTimeout(function () {
+				document.body.classList.add('loaded');
+				document.body.classList.remove('loaded-hiding');
+			}, 500);
+		}
+	</script>
+	<!-- /// прелоадер -->
+
+
+
+	<!-- трек обучения -->
+	<script>
+		// steptip.tooltip (ele, msg, ord, mode);
+		steptip.tooltip
+			(document.getElementById("first"), "Это первая подсказка учебника!", 1, "light");
+		steptip.tooltip
+			(document.getElementById("second"), "Это вторая подсказка учебника!", 2, "dark");
+		steptip.tooltip
+			(document.getElementById("last"), "Это последняя подсказка учебника!", 3, "light");
+
+		// steptip.startTutorial ();
+	</script>
+	<!-- ///трек обучения -->
+
+
+
+
+	<!-- header - шапка сайта -->
+	<script>
+
+		const card = document.querySelector('.card');
+		const cardtoggle = document.querySelector('.toggle');
+		const navigation = document.querySelector('.card .content');
+
+		navigation.onclick = function () {
+			card.classList.toggle('active');
+		}
+		cardtoggle.onclick = function () {
+			card.classList.toggle('active');
+		}
+
+	</script>
+	<!-- ///header - шапка сайта -->
+
+
+
+	<!-- SideBar - навигация слева сбоку -->
+	<script>
+
+		function toggleMenu(event) {
+			let navigationSb = document.querySelector('.navigation-Sb');
+			let toggle = event.target;
+			console.log(event, toggle);
+			navigationSb.classList.toggle('active');
+			toggle.classList.toggle('active');
+		}
+
+
+		let liall = document.querySelectorAll('li')
+
+		liall.forEach((item) =>
+			item.addEventListener('click', function () {
+				liall.forEach((it) => it.classList.remove('li-active'));
+				item.classList.add('li-active');
+			})
+		);
+
+	</script>
+	<!-- ///SideBar - навигация слева сбоку -->
+
+
+
+	<!-- Multi-Step-Form -приветствие  -->
+	<script>
+
+		let form11 = document.getElementById("form1");
+		let form22 = document.getElementById("form2");
+
+		let Nextt = document.getElementById("Next");
+		let Backk = document.getElementById("Back");
+
+		let progresss = document.getElementById("progress");
+
+		Nextt.onclick = function () {
+			form11.style.left = "-500px";
+			form22.style.left = "29px";
+			progresss.style.width = "100%";
+		}
+		Backk.onclick = function () {
+			form11.style.left = "28px";
+			form22.style.left = "500px";
+			progresss.style.width = "50%";
+		}
+
+		let formAuthoM = document.querySelectorAll(".form-authorization-multi");
+
+		formAuthoM.forEach((item) => item.addEventListener("change", function () {
+			if (this.value.length) {
+				this.classList.add('value-true-multi');
+			} else {
+				this.classList.remove('value-true-multi');
+			}
+		})
+		);
+
+	</script>
+	<!-- ///Multi-Step-Form -приветствие  -->
+
+
+	<!-- tariffs - Мой Тариф\Тарифы\История платежей  -->
+	<script>
+
+		function rangeSlide(value) {
+			document.getElementById('formSlider').value = value;
+		}
+
+
+		var tabsA = document.querySelectorAll('.tabs-a')
+		tabsA.forEach((item) =>
+			item.addEventListener('click', function (e) {
+				e.preventDefault();
+				const id = e.target.getAttribute('href').replace('#', '');
+
+				tabsA.forEach(
+					(child) => child.classList.remove('tabs-a-active')
+				);
+				document.querySelectorAll('.tabs-a-content').forEach(
+					(child) => child.classList.remove('tabs-a-content-active')
+				);
+
+				item.classList.add('tabs-a-active');
+				document.getElementById(id).classList.add('tabs-a-content-active');
+			})
+
+		);
+
+		document.querySelectorAll('.checkboxx').forEach((item) =>
+			item.addEventListener('click', function (e) {
+
+				const id = item.getAttribute('data-id');
+
+				document.querySelectorAll('.checkboxx').forEach(
+					(child) => child.classList.remove('checkboxx-active')
+				);
+				document.querySelectorAll('.tariff-list-part2-ul').forEach(
+					(child) => child.classList.remove('tariff-list-part2-ul-active')
+				);
+
+				item.classList.add('checkboxx-active');
+
+				document.querySelectorAll('.checkboxx1').forEach((checkbox) => checkbox.checked = false);
+
+				item.getElementsByClassName('checkboxx1')['checkbox-tariff'].checked = true
+
+				document.getElementById(id).classList.add('tariff-list-part2-ul-active');
+			})
+
+		);
+
+		document.querySelector('.checkboxx').click();
+		document.querySelector('.tabs-a').click();
+
+
+	</script>
+	<!-- ///tariffs - Мой Тариф\Тарифы\История платежей   -->
+
+
+
+
+</body>
+
+</html>

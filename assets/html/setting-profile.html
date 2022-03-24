@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>setting-profile</title>
+	<link rel="icon" href="../jpg-png-svg/favicon-top.png">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+
+	<div class="Wrapper-body">
+		<!-- header - шапка сайта -->
+		<div class="header">
+			<div class="container1">
+				<div class="Logo">
+					<div class="imgBx">
+						<a href="../../index.html">
+							<span>
+								<i class="fa fa-ravelry" aria-hidden="true"></i>
+							</span>
+						</a>
+					</div>
+					<a href="../../index.html"><span class="Logo2part">Servise Parser</span></a>
+				</div>
+
+				<ul>
+					<li><span class="tach"><a href="tariffs.html">Мой тариф: <span class="Free">Пробный</span></a></span>
+					</li>
+					<li><span class="tach"><a class="up-tariff" href="tariffs-copy.html">Улучшить</a></span></li>
+				</ul>
+			</div>
+
+			<div class="container2">
+				<div class="balans-products">
+					<span class="text-before-b">Бананс:</span>
+					<span class="number-b">5704</span>
+					<span class="text-after-b">тов.</span>
+				</div>
+				<div class="colokol">
+					<a class="colokol-cont" href="#">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="card">
+					<div class="content">
+						<div class="imgBx">
+							<span class="icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+							</span>
+						</div>
+						<h2>pochta@mail.ru</h2>
+					</div>
+
+					<div class="header-contr-navigation">
+						<ul class="navigation">
+							<li>
+								<a href="setting-profile.html">
+									<i class="fa fa-user-o" aria-hidden="true"></i>
+									Профиль
+								</a>
+							</li>
+							<li>
+								<a href="tariffs.html">
+									<i class="fa fa-usd" aria-hidden="true"></i>
+									Мой тариф
+								</a>
+							</li>
+							<li>
+								<a href="documentation.html">
+									<i class="fa fa-question" aria-hidden="true"></i>
+									Помощь
+								</a>
+							</li>
+							<li>
+								<a href="login-form.html">
+									<i class="fa fa-sign-out" aria-hidden="true"></i>
+									Выйти
+								</a>
+							</li>
+						</ul>
+					</div>
+
+
+					<div class="toggle">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ///header - шапка сайта -->
+
+
+
+		<!-- SideBar - навигация слева сбоку -->
+		<div class="contr-navigation-Sb">
+
+
+			<div class="contr-tutorial-item-first">
+				<div class="tutorial-parent-block" id="first"></div>
+			</div>
+			<div class="contr-tutorial-item-second">
+				<div class="tutorial-parent-block" id="second"></div>
+			</div>
+			<div class="contr-tutorial-item-third">
+				<div class="tutorial-parent-block" id="third"></div>
+			</div>
+			<div class="contr-tutorial-item-fourth">
+				<div class="tutorial-parent-block" id="fourth"></div>
+			</div>
+			<div class="contr-tutorial-item-last">
+				<div class="tutorial-parent-block" id="last"></div>
+			</div>
+
+
+			<div class="navigation-Sb">
+				<div class="TopBlock">
+					<div class="toggle" onclick="toggleMenu(event)">
+					</div>
+				</div>
+				<ul>
+					<li class="navigation-sb-li">
+						<a href="../../index.html">
+							<div class="icon">
+								<i class="fa fa-table" aria-hidden="true"></i>
+							</div>
+							<div class="title">Мониторинг</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="import-products.html">
+							<div class="icon">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>
+							<div class="title">Мои товары</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="choice-market-place.html">
+							<div class="icon">
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							</div>
+							<div class="title">Мои магазины</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="tariffs-copy.html">
+							<div class="icon">
+								<i class="fa fa-usd" aria-hidden="true"></i>
+							</div>
+							<div class="title">Тарифы</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="documentation.html">
+							<div class="icon">
+								<i class="fa fa-question" aria-hidden="true"></i>
+							</div>
+							<div class="title">Помощь</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<!-- ///SideBar - навигация слева сбоку  -->
+
+
+
+		<div class="wrap-setting-profile">
+
+			<div class="contr-setting-profile">
+				<div class="setting-profile-title">
+					<span>О себе</span>
+				</div>
+				<form>
+					<ul>
+						<li>
+							<label class="setting-profile-input-contr  label-input-setting-profile">
+								<span class="label-input-setting-profile">Имя</span>
+								<input class="label-input-setting-profile" type="text" name="name" placeholder="Имя">
+							</label>
+						</li>
+						<li>
+							<label class="setting-profile-input-contr  label-input-setting-profile">
+								<span class="label-input-setting-profile">Фамилия</span>
+								<input class="label-input-setting-profile" type="text" name="family-name" placeholder="Фамилия">
+							</label>
+						</li>
+						<li>
+							<label class="setting-profile-input-contr  label-input-setting-profile">
+								<span class="label-input-setting-profile">Почта</span>
+								<input class="label-input-setting-profile" type="text" name="mail" placeholder="Почта">
+							</label>
+						</li>
+					</ul>
+					<div class="setting-profile-batton-contr">
+						<button type="submit">
+							Сохранить
+						</button>
+					</div>
+				</form>
+
+			</div>
+
+		</div> <!-- wrap-setting-profile -->
+
+
+
+
+
+	</div> <!-- Wrapper-body -->
+
+
+
+
+	<script>
+
+		const card = document.querySelector('.card');
+		const cardtoggle = document.querySelector('.toggle');
+		const navigation = document.querySelector('.card .content');
+
+		navigation.onclick = function () {
+			card.classList.toggle('active');
+		}
+		cardtoggle.onclick = function () {
+			card.classList.toggle('active');
+		}
+
+	</script>
+
+
+
+	<!-- SideBar - навигация слева сбоку -->
+	<script>
+
+		function toggleMenu(event) {
+			let navigationSb = document.querySelector('.navigation-Sb');
+			let toggle = event.target;
+			console.log(event, toggle);
+			navigationSb.classList.toggle('active');
+			toggle.classList.toggle('active');
+		}
+
+
+		let liall = document.querySelectorAll('li')
+
+		liall.forEach((item) =>
+			item.addEventListener('click', function () {
+				liall.forEach((it) => it.classList.remove('li-active'));
+				item.classList.add('li-active');
+			})
+		);
+
+	</script>
+	<!-- ///SideBar - навигация слева сбоку -->
+</body>
+
+</html>

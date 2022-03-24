@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration page</title>
+	<link rel="icon" href="../jpg-png-svg/favicon-top.png">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+
+	<div class="Wrapper-body">
+
+
+		<!-- header - шапка сайта -->
+		<div class="logo-login-page">
+			<a class="link-login-signin" href="../../index.html">
+				<span class="img-bx">
+					<i class="fa fa-ravelry" aria-hidden="true"></i>
+				</span>
+			</a>
+			<a class="link-login-signin" href="../../index.html">
+				<span class="logo-name">Servise Parser</span>
+			</a>
+		</div>
+		<!-- ///header - шапка сайта -->
+
+		<div class="wrap-registration-form">
+
+			<div class="inner-registration-form">
+				<div class="title-registration-form">Создайте в свой профиль</div>
+				<div class="main-contr-registration">
+					<form>
+						<div class="form-contr-registration">
+							<label class="label-registration-form-item">
+								<input class="form-registration form-authorization" type="text" name="username" value=""
+									required>
+								<span class="text-form-registration">Имя</span>
+							</label>
+							<label class="label-registration-form-item">
+								<input class="form-registration form-authorization" type="text" name="telephone" value=""
+									required>
+								<span class="text-form-registration">Телефон</span>
+							</label>
+							<label class="label-registration-form-item">
+								<input class="form-registration form-authorization" type="text" name="mail" value="" required>
+								<span class="text-form-registration">Почта</span>
+							</label>
+							<label class="label-registration-form-item">
+								<input class="form-registration form-authorization" id="form-password" type="password"
+									name="password" value="" required>
+								<span class="text-form-registration">Пароль</span>
+								<i class="fa fa-eye-slash" aria-hidden="true"></i>
+							</label>
+						</div>
+						<div class="no-password">
+							<a class="link-login-signin" href="#">Не помню пароль</a>
+						</div>
+						<div class="contr-but-registration">
+							<button class="but-registration" type="submit">
+								Регистрация
+							</button>
+						</div>
+					</form>
+				</div>
+				<p class="privacy-policy-registration">
+					Регистрируясь в сервисе, Вы соглашаетесь со всеми условиями <a class="link-login-signin"
+						href="#">Пользовательского</a> соглашения и принимаете условия обработки данных, указанные в <a
+						class="link-login-signin" href="#">Политике конфиденциальности</a>.
+				</p>
+				<div class="link-login-registration">
+					Уже есть профиль?
+					<a class="link-login-signin" href="login-form.html">Войдите</a>
+				</div>
+			</div>
+
+		</div> <!-- wrap-registration-form -->
+
+
+	</div> <!-- Wrapper-body -->
+
+
+	<script>
+		let faEye = document.querySelector('.fa-eye-slash');
+		let formAutho = document.querySelectorAll(".form-authorization");
+		let formPass = document.getElementById("form-password");
+
+		faEye.onclick = function (e) {
+			faEye.classList.toggle('fa-eye-active');
+			if (faEye.classList.contains('fa-eye-active')) {
+				formPass.setAttribute('type', 'text');
+			} else {
+				formPass.setAttribute('type', 'password');
+			}
+		};
+
+		formAutho.forEach((item) => item.addEventListener("change", function () {
+			if (this.value.length) {
+				this.classList.add('value-true');
+			} else {
+				this.classList.remove('value-true');
+			};
+			console.log(this, this.value.length, this.value);
+		})
+		);
+	</script>
+</body>
+
+</html>

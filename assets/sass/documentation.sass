@@ -1,0 +1,72 @@
+// блок табов по документации
+.wrap-tabs-documentation
+	position: relative
+	max-width: 1300px
+	margin: 0 auto 20px
+	background: white
+	border-radius: 10px
+	box-shadow: 0 3px 10px #e7f1e7
+
+	.inner-documentation
+		display: flex
+		padding: 20px 40px
+
+.item-tab-doc
+	margin-right: 20px
+
+	&:last-child
+		margin-right: 0
+
+	.link-tab-doc
+		display: inline-block
+		padding: 10px
+		border-radius: 5px
+		font-weight: 400
+		font-size: 14px
+		background-color: #f8ecaa
+		color: #a48c0e
+		transition: background-color .2s ease-in-out
+
+		&:hover
+			background-color: #e9c505
+
+	.tab-doc-active
+		background-color: #e9c505
+		color: white
+		cursor: default
+
+// блок документации 
+.wrap-documentation
+	position: relative
+	max-width: 1300px
+	margin: 0 auto 200px
+	background: white
+	border-radius: 10px
+	box-shadow: 0 3px 10px #e7f1e7
+
+.inner-documentation
+	display: none
+	padding: 20px 40px 50px
+
+	.little-title-doc
+		font-size: 14px
+		margin-bottom: 40px
+
+	.title-doc
+		margin-bottom: 20px
+
+	.contr-img-doc
+		width: 100%
+		margin-bottom: 20px
+
+		.img-doc
+			width: 100%
+
+	.subtitle-doc
+		margin-bottom: 5px
+
+.inner-doc-active
+	display: block
+
+.section-doc
+	margin-bottom: 20px

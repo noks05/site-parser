@@ -1,0 +1,240 @@
+
+.header
+	display: flex
+	position: relative
+	justify-content: space-between	
+	height: 115px
+	margin-bottom: 50px
+	padding: 0 30px	
+
+	.container1,
+	.container2
+		display: flex
+		align-items: center
+
+.container1 a,
+.container2 .colokol a
+	text-decoration: none
+
+.container1 li
+	list-style: none
+
+.container1 li a,
+.container2 .colokol a
+	padding: 11px 17px
+	display: block
+	color: #5e6278	
+	transition: all 0.1s
+
+.container1 a:hover,
+.container2 .colokol a:hover
+	color: #181c32
+	cursor: pointer
+
+/*тут начинается поочередная стилизация "мелких"" блоков*/
+.container1
+	.Logo
+		display: flex
+		align-items: center
+		margin-right: 20px
+		font-weight: initial
+
+		.imgBx		
+			margin-right: 10px 
+
+			.fa
+				color: #181c32
+				font-size: 25px
+
+		.Logo2part
+			color: #181c32
+			font-size: 25px
+			
+	ul
+		display: flex
+		margin-left: 10px
+
+		li
+			display: flex
+			align-items: center
+
+			a
+				font-weight: unset
+
+	.Free
+		padding-left: 2px
+		text-decoration: underline
+		font-weight: bold
+
+	.up-tariff
+		padding: 10px 27px
+		border-radius: 7px
+		font-weight: 500
+		line-height: normal	
+		color: #fff
+		background: #1d9b31d4
+		transition: 0.1s
+
+		&:hover
+			color: white
+			box-shadow: 0px 0px 2px 0px #82b440
+			transform: translateY(-1px)
+
+.container2 
+	.balans-products
+		margin-right: 20px
+		padding: 11px 18px
+		border-radius: 5px
+		background-color: #e8f1ea
+
+		.text-before-b
+			color: grey
+
+		.number-b
+			margin-right: 3px
+			color: #1d9b31
+			
+		.text-after-b
+			font-size: 14px
+			color: grey
+			
+	.colokol 
+		.colokol-cont
+			background: rgba(205, 227, 209, 0.4)
+			border-radius: 7px
+			transition: 0.2s
+
+		.colokol-cont:hover
+			background: rgba(239, 242, 245, 0.7)
+			color: #181c32
+
+
+
+
+
+
+
+
+
+
+
+// значения в скобочках 
+// без коментариев это то что было 
+// до изменений,теперь когда
+.card	
+	display: block
+	position: relative
+	width: 205px/*238*/
+	height: 56px
+	bottom: 3px
+	padding: 16px
+	padding-left: 20px
+	overflow: visible/*hidden*/
+	cursor: pointer
+	z-index:1001
+	background: none
+	border: none 		
+
+	.header-contr-navigation /*секция добавлена*/
+		position: relative
+		top: 30px
+		left: -7px
+		width: 187px
+		height: 0px
+		padding: 0px
+		border-radius: 7px
+		overflow: hidden
+		background: white
+		box-shadow: 0 0 14px 2px #8080801c
+		transition: height 0.7s
+		z-index: 1001
+
+		ul
+			width: 100%
+			padding: 20px 30px
+
+			li /*секция добавлена*/
+				position: relative
+				padding-bottom: 10px
+				font-size: 14px
+				list-style: none
+
+				a
+					text-decoration: none
+					display: flex
+					align-items: center
+					color: #555
+
+					&:hover
+						color: #8cb396
+
+					.fa
+						width: 20px
+						margin-right: 10px
+
+.card.active 
+	.header-contr-navigation /*секция добавлена*/
+		height: 153px
+
+.card
+	.content		
+		display: flex
+		cursor: pointer
+
+	.content:hover .imgBx .icon,
+	.content:hover h2		
+		color: #181c32
+
+	.content
+		.imgBx
+			position: relative
+			font-size: 17px
+			line-height: normal
+
+			.icon
+				position: relative
+				top: 0
+				left: 0
+				padding: 0 10px 0 0
+				color: #5e6278	
+				transition: all 0.1s
+
+		h2
+			font-size: 1.0em
+			line-height: normal
+			margin: 0
+			color: #5e6278	
+			font-weight: normal	
+			transition: all 0.1s
+
+	.toggle
+		position: absolute/*relative*/
+		bottom: 12px/*207*/
+		right: 0px/*-177*/
+		width: 25px
+		height: 30px
+		display: flex
+		justify-content: center
+		align-items: center
+		cursor: pointer
+		z-index: 100
+
+		.fa
+			font-size: 16px
+			transition: ease-in-out 0.5s
+
+.card.active 
+	.toggle
+		.fa
+			transform: rotate(-180deg)
+			color: #1d9b31
+
+
+
+
+
+
+@media (max-width: 1090px)
+	.header	
+		margin: 0 10px
+	

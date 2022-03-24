@@ -1,0 +1,243 @@
+.logo-login-page
+	display: flex
+	align-items: center
+	padding: 40px 50px
+	margin-bottom: 50px
+	font-weight: initial
+	cursor: default
+
+	.img-bx
+		margin-right: 10px
+
+		.fa
+			color: #181c32
+			font-size: 25px		
+
+	.logo-name
+		color: #181c32
+		font-size: 25px
+
+// страница входа
+.wrap-login-form
+	max-width: 400px
+	margin: 0 auto 70px
+	border-radius: 10px
+	background-color: white
+	box-shadow: 0 10px 10px 3px #eee
+
+.inner-login-form
+	padding: 30px 50px
+
+	.title-login-form
+		margin-bottom: 25px
+		padding-left: 10px
+		font-size: 19px
+		font-weight: 400
+
+	.form-contr-login
+		margin-bottom: 25px
+
+.label-login-form-item
+	position: relative
+	display: block
+	height: 56px
+	margin-bottom: 19px 
+	border: 1px solid #9995
+	background-color: white
+	border-radius: 10px
+
+	&:last-child
+		margin-bottom: 0
+
+	&:hover
+		border: 1px solid #9999	
+
+	.form-login
+		height: 100%
+		width: 100%
+		padding: 20px 40px 5px 20px
+		border-radius: 10px
+		border: none
+		font-size: 16px
+		line-height: 20px
+
+		&::placeholder
+			color: #bfbfbf
+
+	.value-true,
+	.form-login:focus		
+		outline: none
+
+		& ~ .text-form-login				
+			transform: translateY(-5px) scale(.6)
+			cursor: default
+
+	.text-form-login
+		position: absolute
+		top: 14px
+		left: 20px
+		display: inline-block
+		font-size: 15px
+		font-weight: 300
+		color: grey
+		cursor: text
+		transform: translateY(0) scale(1.0)
+		transform-origin: 0 0
+		transition: all .2s ease-in-out
+
+	.fa
+		position: absolute
+		top: 16px
+		right: 10px
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		width: 20px
+		height: 20px
+		color: #999
+		cursor: pointer
+
+	.fa-eye-active:before
+			content: '\f06e'
+
+.no-password
+	margin-bottom: 30px
+	padding-left: 10px
+	font-size: 14px
+
+.contr-but-login
+	margin: 0 10px 50px
+
+	.but-login
+		width: 100%
+		padding: 10px
+		border: none
+		border-radius: 5px
+		background-color: blueviolet
+		color: white
+		cursor: pointer
+		transition: all 0.2s ease-in-out
+
+		&:hover
+			background-color: #6c9b0a
+			background-color: #500397
+
+.link-registration
+	font-size: 15px
+	text-align: center
+
+// страница регистрации
+.wrap-registration-form
+	max-width: 400px
+	margin: 0 auto 70px
+	border-radius: 10px
+	background-color: white
+	box-shadow: 0 10px 10px 3px #eee
+
+.inner-registration-form
+	padding: 30px 50px
+
+	.title-registration-form
+		margin-bottom: 25px
+		padding-left: 10px
+		font-size: 19px
+		font-weight: 400
+
+.label-registration-form-item
+	position: relative
+	display: block
+	height: 56px
+	margin-bottom: 19px 
+	border: 1px solid #9995
+	background-color: white
+	border-radius: 10px
+
+	&:last-child
+		margin-bottom: 25px
+
+	&:hover
+		border: 1px solid #9999	
+
+	.form-registration
+		height: 100%
+		width: 100%
+		padding: 20px 40px 5px 20px
+		border-radius: 10px
+		border: none
+		font-size: 16px
+		line-height: 20px
+
+		&::placeholder
+			color: #bfbfbf
+
+	.value-true,
+	.form-registration:focus		
+		outline: none
+
+		& ~ .text-form-registration				
+			transform: translateY(-5px) scale(.6)
+			cursor: default
+
+	.text-form-registration
+		position: absolute
+		top: 14px
+		left: 20px
+		display: inline-block
+		font-size: 15px
+		font-weight: 300
+		color: grey
+		cursor: text
+		transform: translateY(0) scale(1.0)
+		transform-origin: 0 0
+		transition: all .2s ease-in-out
+
+	.fa
+		position: absolute
+		top: 16px
+		right: 10px
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		width: 20px
+		height: 20px
+		color: #999
+		cursor: pointer
+
+	.fa-eye-active:before
+			content: '\f06e'
+
+.no-password
+	margin-bottom: 30px
+	padding-left: 10px
+	font-size: 14px
+
+.contr-but-registration
+	margin: 0 10px 50px
+
+	.but-registration
+		width: 100%
+		padding: 10px
+		border: none
+		border-radius: 5px
+		background-color: blueviolet
+		color: white
+		cursor: pointer
+		transition: all 0.2s ease-in-out
+
+		&:hover
+			background-color: #6c9b0a
+			background-color: #500397
+
+.privacy-policy-registration
+	text-align: center
+	margin-bottom: 20px
+	font-size: 13px
+
+.link-login-registration
+	text-align: center
+	font-size: 15px
+	font-weight: 400
+
+.link-login-signin
+	color: blue
+

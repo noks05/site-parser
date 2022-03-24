@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Table-Product</title>
+	<link rel="icon" href="assets/jpg-png-svg/favicon-top.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/steptip.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+	<div class="wrapper-main-table">
+		<!-- header - шапка сайта -->
+		<div class="header">
+			<div class="container1">
+				<div class="Logo">
+					<div class="imgBx">
+						<a href="assets/html/step-form.html">
+							<span>
+								<i class="fa fa-ravelry" aria-hidden="true"></i>
+							</span>
+						</a>
+					</div>
+					<a href="assets/html/step-form.html"><span class="Logo2part">Servise Parser</span></a>
+				</div>
+
+				<ul>
+					<li><span class="tach"><a href="assets/html/tariffs.html">Мой тариф: <span class="Free">Пробный</span></a></span>
+					</li>
+					<li><span class="tach"><a class="up-tariff" href="assets/html/tariffs-copy.html">Улучшить</a></span></li>
+				</ul>
+			</div>
+
+			<div class="container2">
+				<div class="balans-products">
+					<span class="text-before-b">Бананс:</span>
+					<span class="number-b">5704</span>
+					<span class="text-after-b">тов.</span>
+				</div>
+				<div class="colokol">
+					<a class="colokol-cont" href="#">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="card">
+					<div class="content">
+						<div class="imgBx">
+							<span class="icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+							</span>
+						</div>
+						<h2>pochta@mail.ru</h2>
+					</div>
+
+					<div class="header-contr-navigation">
+						<ul class="navigation">
+							<li>
+								<a href="assets/html/setting-profile.html">
+									<i class="fa fa-user-o" aria-hidden="true"></i>
+									Профиль
+								</a>
+							</li>
+							<li>
+								<a href="assets/html/tariffs.html">
+									<i class="fa fa-usd" aria-hidden="true"></i>
+									Мой тариф
+								</a>
+							</li>
+							<li>
+								<a href="assets/html/documentation.html">
+									<i class="fa fa-question" aria-hidden="true"></i>
+									Помощь
+								</a>
+							</li>
+							<li>
+								<a href="assets/html/login-form.html">
+									<i class="fa fa-sign-out" aria-hidden="true"></i>
+									Выйти
+								</a>
+							</li>
+						</ul>
+					</div>
+
+
+					<div class="toggle">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ///header - шапка сайта -->
+
+
+
+		<!-- SideBar - навигация слева сбоку -->
+		<div class="contr-navigation-Sb">
+
+
+			<div class="contr-tutorial-item-first">
+				<div class="tutorial-parent-block" id="first"></div>
+			</div>
+			<div class="contr-tutorial-item-second">
+				<div class="tutorial-parent-block" id="second"></div>
+			</div>
+			<div class="contr-tutorial-item-third">
+				<div class="tutorial-parent-block" id="third"></div>
+			</div>
+			<div class="contr-tutorial-item-fourth">
+				<div class="tutorial-parent-block" id="fourth"></div>
+			</div>
+			<div class="contr-tutorial-item-last">
+				<div class="tutorial-parent-block" id="last"></div>
+			</div>
+
+
+			<div class="navigation-Sb">
+				<div class="TopBlock">
+					<div class="toggle" onclick="toggleMenu(event)">
+					</div>
+				</div>
+				<ul>
+					<li class="navigation-sb-li">
+						<a href="assets/html/table-product.html">
+							<div class="icon">
+								<i class="fa fa-table" aria-hidden="true"></i>
+							</div>
+							<div class="title">Мониторинг</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="assets/html/import-products.html">
+							<div class="icon">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							</div>
+							<div class="title">Мои товары</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="assets/html/choice-market-place.html">
+							<div class="icon">
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							</div>
+							<div class="title">Мои магазины</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="assets/html/tariffs-copy.html">
+							<div class="icon">
+								<i class="fa fa-usd" aria-hidden="true"></i>
+							</div>
+							<div class="title">Тарифы</div>
+						</a>
+					</li>
+					<li class="navigation-sb-li">
+						<a href="assets/html/documentation.html">
+							<div class="icon">
+								<i class="fa fa-question" aria-hidden="true"></i>
+							</div>
+							<div class="title">Помощь</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<!-- ///SideBar - навигация слева сбоку  -->
+
+
+		<!-- Статистика -->
+		<div class="wrap-statistics">
+
+			<!-- прелоадер -->
+			<div class="preloader">
+				<div class="preloader-row">
+					<div class="preloader-item"></div>
+					<div class="preloader-item"></div>
+				</div>
+				<div class="preloader-text">Подождите</div>
+			</div>
+			<!-- /// прелоадер -->
+
+
+
+			<div class="container-statistics">
+				<!-- container-fluid container-xl -->
+				<div class="contr-title-stat">
+					<h3 class="title-stat-contr">
+						Статистика
+						<i class="fa fa-caret-up" aria-hidden="true"></i>
+					</h3>
+					<div class="text-stat-contr">последнее обновление 4 января 2021</div>
+				</div>
+				<div class="contr-box-stat row">
+
+					<div class="box-stat col">
+						<div class="cont-box-stat">
+							<div class="contr-title-box-stat box-stat-product">
+								<div class="subtitle-stat">Товаров всего загружено</div>
+								<div class="all-product-stat">
+									<div class="number-all-stat">
+										15902
+									</div>
+								</div>
+							</div>
+
+							<div class="contr-market-stat">
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/YMy.svg" alt="яндекс маркет иконка">
+									</div>
+									<div class="number-market-stat">
+										34401
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/SMs.png" alt="сбер маркет иконка">
+									</div>
+									<div class="number-market-stat">
+										53300
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/WBw.png" alt="ваилдбериез иконка">
+									</div>
+									<div class="number-market-stat">
+										13144
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="box-stat col">
+						<div class="cont-box-stat">
+							<div class="contr-title-box-stat box-untop-product">
+								<div class="subtitle-stat">Товары не на первой позиции</div>
+								<div class="all-product-stat">
+									<div class="number-all-stat">15902</div>
+									<div class="contr-text-all-stat">
+									</div>
+								</div>
+							</div>
+
+							<div class="contr-market-stat">
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/YMy.svg" alt="яндекс маркет иконка">
+									</div>
+									<div class="number-market-stat">
+										3440
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/SMs.png" alt="сбер маркет иконка">
+									</div>
+									<div class="number-market-stat">
+										3440
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/WBw.png" alt="ваилдбериез иконка">
+									</div>
+									<div class="number-market-stat">
+										3440
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="box-stat col">
+						<div class="cont-box-stat">
+							<div class="contr-title-box-stat box-midle-product">
+								<div class="subtitle-stat">Товары со средней ценой на первой позиции</div>
+								<div class="all-product-stat">
+									<div class="number-all-stat">15902</div>
+									<div class="contr-text-all-stat">
+									</div>
+								</div>
+							</div>
+
+							<div class="contr-market-stat">
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/YMy.svg" alt="яндекс маркет иконка">
+									</div>
+									<div class="number-market-stat">
+										3440
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/SMs.png" alt="сбер маркет иконка">
+									</div>
+									<div class="number-market-stat">
+										3440
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/WBw.png" alt="ваилдбериез иконка">
+									</div>
+									<div class="number-market-stat">
+										3440
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="box-stat col">
+						<div class="cont-box-stat">
+							<div class="contr-title-box-stat box-bottom-product">
+								<div class="subtitle-stat">Товары с низкой ценой на первом месте</div>
+								<div class="all-product-stat">
+									<div class="number-all-stat">15902</div>
+									<div class="contr-text-all-stat">
+									</div>
+								</div>
+							</div>
+
+							<div class="contr-market-stat">
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/YMy.svg" alt="яндекс маркет иконка">
+									</div>
+									<div class="number-market-stat">
+										3440
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/SMs.png" alt="сбер маркет иконка">
+									</div>
+									<div class="number-market-stat">
+										3440
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/WBw.png" alt="ваилдбериез иконка">
+									</div>
+									<div class="number-market-stat">
+										3440
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="box-stat col">
+						<div class="cont-box-stat">
+							<div class="contr-title-box-stat box-unkonk-product">
+								<div class="subtitle-stat">Товары без конкурентов</div>
+								<div class="all-product-stat">
+									<div class="number-all-stat">15902</div>
+									<div class="contr-text-all-stat">
+									</div>
+								</div>
+							</div>
+
+							<div class="contr-market-stat">
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/YMy.svg" alt="яндекс маркет иконка">
+									</div>
+									<div class="number-market-stat">
+										3440
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/SMs.png" alt="сбер маркет иконка">
+									</div>
+									<div class="number-market-stat">
+										3440
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+								<div class="box-market-stat">
+									<div class="contr-img-stat">
+										<img class="img-stat" src="assets/jpg-png-svg/WBw.png" alt="ваилдбериез иконка">
+									</div>
+									<div class="number-market-stat">
+										3440
+									</div>
+									<div class="text-market-stat">
+										отфильтровать
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+		<!-- ///Статистика -->
+
+
+
+
+		<div class="container-main-table">
+
+
+			<!-- прелоадер -->
+			<div class="preloader">
+				<div class="preloader-row">
+					<div class="preloader-item"></div>
+					<div class="preloader-item"></div>
+				</div>
+				<div class="preloader-text">Подождите</div>
+			</div>
+			<!-- /// прелоадер -->
+
+
+
+
+
+			<!-- модальное окно загрузки товаров в таблицу -->
+			<div class="modal fade modal-download-product" id="exampleModal-download-product" tabindex="-1"
+				aria-labelledby="exampleModalLabel-product" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel-product">Список загруженных товаров.</h5>
+							<button type="button" class="btn-close button-drop" data-bs-dismiss="modal"
+								aria-label="Закрыть"></button>
+						</div>
+						<!-- тело модального окно загрузки товаров в таблицу -->
+						<div class="modal-body">
+
+							<div class="container-table-modal">
+
+								<div class="cont-table-modal" id="table-yandex-modal">
+
+									<!-- голова таблицы -->
+									<ul class="table-list-header-m">
+										<li class="row-header-m">
+											<div class="row-cont-m">
+												<div class="cell-header-m product-width"><span
+														class="title-product-cell">Товар</span></div>
+												<div class="cell-header-m price-width">Колонка</div>
+												<div class="cell-header-m position-width">Колонка</div>
+												<div class="cell-header-m action-width">Действия</div>
+											</div>
+										</li>
+									</ul>
+
+									<!-- тело таблицы -->
+									<ul class="table-list-body-m">
+
+										<li class="row-m">
+
+											<div class="row-cont-m">
+												<div class="card-product-m cell-m product-width">
+													<label class="checkbox-row">
+														<input type="checkbox" name="pruduct" value="checked">
+														<span class="checkbox-clone">
+															<i class="fa fa-check" aria-hidden="true"></i>
+														</span>
+													</label>
+													<div class="name-card">
+														<ul>
+															<li>
+																Артикул товара
+															</li>
+															<li>
+																Имя товара
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="cell-m price-width">Колонка</div>
+												<div class="cell-m position-width">Колонка</div>
+												<div class="cell-m cell-icon-m action-width">
+													<i class="fa fa-sliders" aria-hidden="true"></i>
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<i class="fa fa-trash" aria-hidden="true"></i>
+												</div>
+											</div>
+
+										</li> <!-- ///первая строка -->
+
+									</ul> <!-- основное тело <ul>таблицы -->
+
+								</div> <!-- content-main-table -->
+
+
+
+
+								<div class="cont-table-modal" id="table-sber-modal">
+
+								</div>
+
+
+
+								<div class="cont-table-modal" id="table-wild-modal">
+
+								</div> <!-- table-Sber -->
+
+
+							</div>
+						</div>
+						<!-- ///тело модального окно загрузки товаров к таблице -->
+
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary button-drop">Добавить</button>
+							<button type="button" class="btn btn-secondary button-drop"
+								data-bs-dismiss="modal">Закрыть</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ///модальное окно загрузки товаров к таблице -->
+
+
+
+
+
+			<!-- Модальное окно для редактирования ячеек -->
+			<div class="modal fade modal-edit-cell" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title" id="exampleModalLabel">
+								Настройка позиций
+								<span data-bs-toggle="tooltip" data-bs-placement="right"
+									title="Для измененния названия позиций ,ведите в поля ниже желаемые значения и нажмите 'Сохранить выбор' или отмените изменения кнопкой 'Отменить'.">
+									<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+								</span>
+							</h3>
+							<button type="button" class="btn-close button-drop" data-bs-dismiss="modal"
+								aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="modal-window-text">Товар</div>
+								<input class="input-edit-cell" type="text" name="table-redact">
+								<div class="modal-window-text">Позиция</div>
+								<input class="input-edit-cell" type="text" name="table-redact">
+								<div class="modal-window-text">Артикул</div>
+								<input class="input-edit-cell" type="text" name="table-redact">
+								<div class="modal-window-text">мин.цена</div>
+								<input class="input-edit-cell" type="text" name="table-redact">
+								<div class="modal-window-text">макс.цена</div>
+								<input class="input-edit-cell" type="text" name="table-redact">
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary button-drop">Сохранить выбор</button>
+							<button type="button" class="btn btn-secondary button-drop"
+								data-bs-dismiss="modal">Отменить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /// Модальное окно для редактирования ячеек -->
+
+
+			<!-- контейнер для toggle-навигации, табов и кнопок +товары, помощь -->
+			<div class="contr-nav-tabs-add-t">
+				<div class="cntr-n-t-a">
+					<div class="contr-nav-search item-head-table">
+						<div class="but-category-nav">
+							<button class="but-toggle-menu-category button-drop">
+								<i class="fa fa-sliders" aria-hidden="true"></i>
+							</button>
+						</div>
+
+						<div class="table-nav-search">
+							<form>
+								<input class="search-table" type="search" name="search"
+									placeholder="Название товара, артикул, бренд и т.п.">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</form>
+						</div>
+					</div>
+
+					<!-- табы к таблице -->
+					<div class="tabs-main-table item-head-table">
+						<div class="item-tabs">
+							<img src="assets/jpg-png-svg/YM.svg" data-id="table-yandex"
+								class="content-item-tabs content-item-tabs-yandex" alt="вкладка Яндекс маркет">
+						</div>
+						<div class="item-tabs">
+							<img src="assets/jpg-png-svg/SM1.png" data-id="table-sber"
+								class="content-item-tabs content-item-tabs-sber" alt="вкладка Сбер маркет">
+						</div>
+						<div class="item-tabs">
+							<img src="assets/jpg-png-svg/WB.png" data-id="table-wild"
+								class="content-item-tabs content-item-tabs-wild" alt="вкладка Ваилдбериес">
+						</div>
+					</div>
+					<!-- ///табы к таблице -->
+
+
+					<!-- кнопка модального окна и помощь -->
+					<div class="contr-app-table item-head-table">
+
+						<div class="text-number-product-all">
+							Всего товаров в таблице:
+							<span class="table-number-product-all">100.000</span> шт.
+						</div>
+
+						<div class="status-loader">
+							<div class="status-loader-text text-number-product-all">
+								Загрузилось
+								<span class="loading-product">500</span> тов.
+								из
+								<span class="loading-product-all">100.000</span> тов.
+							</div>
+							<div class="loader">
+								<div class="loading"></div>
+							</div>
+						</div>
+
+						<div class="contr-addproduct-and-help">
+							<!-- Кнопка включения модального окна -->
+							<button type="button" class="download-product button-drop" data-bs-toggle="modal"
+								data-bs-target="#exampleModal-download-product">
+								<i class="fa fa-plus" aria-hidden="true"></i>
+								Товары
+							</button>
+							<!-- ///Кнопка включения модального окна -->
+							<div class="help-contr">
+								<button class="help-all-table">
+									Помощь
+									<i class="fa fa-question-circle-o" aria-hidden="true" data-bs-toggle="tooltip"
+										data-bs-placement="top" title="Информация помогающая разобраться в таблице"></i>
+								</button>
+								<div class="contr-list-help">
+									<ul class="list-help">
+										<li class="row-help" onclick="steptipActive()">Посказки</li>
+										<li class="row-help">
+											<a class="link-doc-table" href="assets/html/documentation.html">
+												Справка
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- ///кнопка модального окна и помощь -->
+				</div>
+
+				<!-- навигация по таблице(по категориям и поисковое поле) -->
+				<div class="table-navigation container-fluid">
+					<div class="table-nav-category row row-cols-5 gx-4">
+						<div class="nav-item col">
+							<div class="category-name">Категория</div>
+							<div class="category-value">
+								<span class="category-value-text">Очень длинное название</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</div>
+							<ul class="dropdown-list-category">
+								<li class="category-row">
+									<div class="category-contr">
+										<label class="checkbox-contr">
+											<input type="checkbox" name="category" value="checked">
+											<span class="checkbox-clone">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</span>
+											<span class="category-row-text">Категория</span>
+										</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="nav-item col">
+							<div class="category-name">Предмет</div>
+							<div class="category-value">
+								<span class="category-value-text">Очень длинное название</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</div>
+							<ul class="dropdown-list-category">
+								<li class="category-row">
+									<div class="category-contr">
+										<label class="checkbox-contr">
+											<input type="checkbox" name="category" value="checked">
+											<span class="checkbox-clone">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</span>
+											<span class="category-row-text">Категория</span>
+										</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="nav-item col">
+							<div class="category-name">Теги</div>
+							<div class="category-value">
+								<span class="category-value-text">Очень длинное название</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</div>
+							<ul class="dropdown-list-category">
+								<li class="category-row">
+									<div class="category-contr">
+										<label class="checkbox-contr">
+											<input type="checkbox" name="category" value="checked">
+											<span class="checkbox-clone">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</span>
+											<span class="category-row-text">Категория</span>
+										</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="but-contr col">
+							<button class="filter-on button-drop">Применить</button>
+						</div>
+
+						<div class="but-contr col">
+							<button class="filter-off button-drop" type="reset">Сбросить</button>
+						</div>
+					</div>
+				</div>
+				<!-- /// навигация по таблице(по категориям и поисковое поле) -->
+			</div>
+			<!-- /// контейнер для toggle-навигации, табов и кнопок +товары, помощь -->
+
+
+
+
+
+
+
+			<!-- Основная Таблица . Блоки Яндекс,Сбер,Wildberiez -->
+			<div class="content-main-table" id="table-yandex">
+
+
+				<!-- голова таблицы -->
+				<ul class="list-main-table-header list-main-table">
+					<li class="row-main-table-h">
+						<div class="cont-row-h">
+							<div class="cell-h product-width">
+								<label class="checkbox-row checkbox-row-head" id="check-head-main-table">
+									<input id="checkbox-head-main-table" type="checkbox" name="pruduct" value="checked">
+									<span class="checkbox-clone">
+										<i class="fa fa-check" aria-hidden="true"></i>
+									</span>
+								</label>
+								<span class="title-table-product">Товар</span>
+							</div>
+							<div class="cell-h price-width">
+								Цена
+							</div>
+							<div class="cell-h position-width">
+								Позиция
+								<span class="prompt" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+									<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+								</span>
+							</div>
+							<div class="cell-h konk-width">
+								Конкуренты
+							</div>
+							<div class="cell-h min-price-width">
+								мин. цена
+							</div>
+							<div class="cell-h max-price-width">
+								макс. цена
+							</div>
+							<div class="cell-h action-width">
+								Действия
+							</div>
+						</div>
+						<div class="add-all-content add-all-cont-main-table">
+							<div class="contr-it-all-add">
+								<div class="item-add-all">
+									<i class="fa fa-trash-o" aria-hidden="true"></i>
+									Удалить
+								</div>
+								<div class="item-add-all item-add-all-close">
+									<i class="fa fa-times" aria-hidden="true"></i>
+									Отменить выбор
+								</div>
+							</div>
+
+							<div class="info-all-add">
+								Количество выбранных товаров: <span id="checked-product">7</span> из <span>7</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<!-- тело таблицы -->
+				<!-- первая строка -->
+				<ul class="list-main-table-body list-main-table">
+
+					<li class="row-main-table">
+						<div class="cont-row">
+							<div class="card-product cell product-width">
+								<label class="checkbox-row">
+									<input class="checkbox-product-main-table" type="checkbox" name="pruduct" value="checked">
+									<span class="checkbox-clone">
+										<i class="fa fa-check" aria-hidden="true"></i>
+									</span>
+								</label>
+								<div class="foto-card">
+									<img src="assets/jpg-png-svg/table-img.png" alt="картинка товара">
+								</div>
+								<div class="name-card">
+									<ul>
+										<li>
+											Артикул товара
+										</li>
+										<li>
+											Имя товара
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="cell price-width">10 ₽</div>
+							<div class="cell position-width">
+								<span class="main-offer"></span>
+								<span class="color-help" data-bs-html="true" data-bs-toggle="tooltip" data-bs-placement="top"
+									title="Подсказка вверху <img src='assets/jpg-png-svg/WB.png' alt='photo'>">
+									<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+								</span>
+							</div>
+							<div class="cell  dropdown-menu-k konk-width">
+								5
+								<div class="konk-readr-more-contr">
+									<span class="konk-readr-more">
+									</span>
+									<span class="toggle-menu-k">
+										<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+							<div class="cell min-price-width">10 ₽<div class="minor-text-row">название магазина</div>
+							</div>
+							<div class="cell max-price-width">50 ₽<div class="minor-text-row">название магазина</div>
+							</div>
+							<div class="cell cell-icon action-width">
+								<i class="fa fa-sliders" aria-hidden="true"></i>
+								<i class="fa fa-pencil" aria-hidden="true" data-bs-toggle="modal"
+									data-bs-target="#exampleModal"></i>
+								<i class="fa fa-trash" aria-hidden="true"></i>
+							</div>
+						</div>
+
+
+						<ul class="list-konk list-konk-green list-konk-red">
+							<li class="row-k-h">
+								<div class="cont-row-k-h">
+									<div class="cell-k-h product-width"><span>Товар</span></div>
+									<div class="cell-k-h price-width">Цена</div>
+									<div class="cell-k-h position-width">Позиция</div>
+									<div class="cell-k-h min-price-width">мин. цена</div>
+									<div class="cell-k-h max-price-width">макс. цена</div>
+									<div class="cell-k-h action-width">Действия</div>
+								</div>
+							</li>
+
+							<li class="row-k">
+								<div class="cont-row-k">
+									<div class="card-product cell-k product-width">
+										<label class="checkbox-row">
+											<input type="checkbox" name="pruduct" value="checked">
+											<span class="checkbox-clone">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</span>
+										</label>
+										<div class="name-card">
+											<ul>
+												<li>
+													Артикул товара
+												</li>
+												<li>
+													Имя товара
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="cell-k price-width">10 ₽</div>
+									<div class="cell-k position-width">
+										<span class="out-top">
+										</span>
+										<span class="color-help" data-bs-toggle="tooltip" data-bs-placement="top"
+											title="Подсказка вверху">
+											<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="cell-k min-price-width">10 ₽</div>
+									<div class="cell-k max-price-width">50 ₽<br>название магазина</div>
+									<div class="cell-k  cell-icon action-width">
+										<i class="fa fa-sliders" aria-hidden="true"></i>
+										<i class="fa fa-pencil" aria-hidden="true" data-bs-toggle="modal"
+											data-bs-target="#exampleModal"></i>
+										<i class="fa fa-trash" aria-hidden="true"></i>
+									</div>
+								</div>
+							</li>
+
+							<li class="row-k">
+								<div class="cont-row-k">
+									<div class="card-product cell-k product-width">
+										<label class="checkbox-row">
+											<input type="checkbox" name="pruduct" value="checked">
+											<span class="checkbox-clone">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</span>
+										</label>
+										<div class="name-card">
+											<ul>
+												<li>
+													Артикул товара
+												</li>
+												<li>
+													Имя товара
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="cell-k price-width">10 ₽</div>
+									<div class="cell-k position-width">
+										<span class="main-offer top-offer out-top offer">
+										</span>
+										<span class="color-help" data-bs-toggle="tooltip" data-bs-placement="top"
+											title="Подсказка вверху">
+											<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="cell-k min-price-width">10 ₽</div>
+									<div class="cell-k max-price-width">50 ₽<br>название магазина</div>
+									<div class="cell-k  cell-icon action-width">
+										<i class="fa fa-sliders" aria-hidden="true"></i>
+										<i class="fa fa-pencil" aria-hidden="true" data-bs-toggle="modal"
+											data-bs-target="#exampleModal"></i>
+										<i class="fa fa-trash" aria-hidden="true"></i>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+					</li>
+
+
+
+					<li class="row-main-table">
+						<div class="cont-row">
+							<div class="card-product cell product-width">
+								<label class="checkbox-row">
+									<input class="checkbox-product-main-table" type="checkbox" name="pruduct" value="checked">
+									<span class="checkbox-clone">
+										<i class="fa fa-check" aria-hidden="true"></i>
+									</span>
+								</label>
+								<div class="foto-card"><img src="assets/jpg-png-svg/table-img.png" alt="картинка товара"></div>
+								<div class="name-card">
+									<ul>
+										<li>
+											Артикул товара
+										</li>
+										<li>
+											Имя товара
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="cell price-width">10 ₽</div>
+							<div class="cell position-width">
+								<span class="top-delivery">
+								</span>
+								<span class="color-help" data-bs-toggle="tooltip" data-bs-placement="top"
+									title="Подсказка вверху">
+									<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+								</span>
+							</div>
+							<div class="cell  dropdown-menu-k konk-width">
+								5
+								<div class="konk-readr-more-contr">
+									<span class="konk-readr-more">
+									</span>
+									<span class="toggle-menu-k">
+										<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+							<div class="cell min-price-width">10 ₽<br>название магазина</div>
+							<div class="cell max-price-width">50 ₽<br>название магазина</div>
+							<div class="cell cell-icon action-width">
+								<i class="fa fa-sliders" aria-hidden="true"></i>
+								<i class="fa fa-pencil" aria-hidden="true" data-bs-toggle="modal"
+									data-bs-target="#exampleModal"></i>
+								<i class="fa fa-trash" aria-hidden="true"></i>
+							</div>
+						</div>
+
+
+						<ul class="list-konk list-konk-green list-konk-red">
+							<li class="row-k-h">
+								<div class="cont-row-k-h">
+									<div class="cell-k-h product-width"><span>Товар</span></div>
+									<div class="cell-k-h price-width">Цена</div>
+									<div class="cell-k-h position-width">Позиция</div>
+									<div class="cell-k-h min-price-width">мин. цена</div>
+									<div class="cell-k-h max-price-width">макс. цена</div>
+									<div class="cell-k-h action-width">Действия</div>
+								</div>
+							</li>
+
+							<li class="row-k">
+								<div class="cont-row-k">
+									<div class="card-product cell-k product-width">
+										<label class="checkbox-row">
+											<input type="checkbox" name="pruduct" value="checked">
+											<span class="checkbox-clone">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</span>
+										</label>
+										<div class="name-card">
+											<ul>
+												<li>
+													Артикул товара
+												</li>
+												<li>
+													Имя товара
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="cell-k price-width">10 ₽</div>
+									<div class="cell-k position-width">
+										<span class="main-offer top-offer out-top offer">
+										</span>
+										<span class="color-help" data-bs-toggle="tooltip" data-bs-placement="top"
+											title="Подсказка вверху">
+											<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="cell-k min-price-width">10 ₽<br>название магазина</div>
+									<div class="cell-k max-price-width">50 ₽<br>название магазина</div>
+									<div class="cell-k  cell-icon action-width">
+										<i class="fa fa-sliders" aria-hidden="true"></i>
+										<i class="fa fa-pencil" aria-hidden="true" data-bs-toggle="modal"
+											data-bs-target="#exampleModal"></i>
+										<i class="fa fa-trash" aria-hidden="true"></i>
+									</div>
+								</div>
+							</li>
+							<li class="row-k">
+								<div class="cont-row-k">
+									<div class="card-product cell-k product-width">
+										<label class="checkbox-row">
+											<input type="checkbox" name="pruduct" value="checked">
+											<span class="checkbox-clone">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</span>
+										</label>
+										<div class="name-card">
+											<ul>
+												<li>
+													Артикул товара
+												</li>
+												<li>
+													Имя товара
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="cell-k price-width">10 ₽</div>
+									<div class="cell-k position-width">
+										<span class="main-offer top-offer out-top offer">
+										</span>
+										<span class="color-help" data-bs-toggle="tooltip" data-bs-placement="top"
+											title="Подсказка вверху">
+											<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="cell-k min-price-width">10 ₽<br>название магазина</div>
+									<div class="cell-k max-price-width">50 ₽<br>название магазина</div>
+									<div class="cell-k  cell-icon action-width">
+										<i class="fa fa-sliders" aria-hidden="true"></i>
+										<i class="fa fa-pencil" aria-hidden="true" data-bs-toggle="modal"
+											data-bs-target="#exampleModal"></i>
+										<i class="fa fa-trash" aria-hidden="true"></i>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+
+				</ul> <!-- основное тело <ul>таблицы -->
+
+				<div class="none-product">
+					В таблице пока нет товаров. Добавить товары можно с помощью кнопки "Товары", в верхнем правом углу
+					таблицы.
+				</div>
+
+			</div> <!-- ///table-yandex -->
+
+
+
+
+
+
+
+
+			<div class="content-main-table" id="table-sber">
+			</div> <!-- ///table-sber -->
+
+
+
+
+
+
+			<div class="content-main-table" id="table-wild">
+			</div> <!-- ///table-wild -->
+
+
+
+
+		</div>
+
+
+
+
+	</div>
+	<!--wrapper-main-table -->
+
+
+
+	<script src="assets/js/steptip.js"></script>
+	<script src="assets/js/popper.min.js">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+	</script>
+
+
+
+
+
+	<!-- прелоадер -->
+	<script>
+		let textMarketStat = document.querySelectorAll('.text-market-stat');
+		let wrapStat = document.querySelector('.wrap-statistics');
+		let contMainTable = document.querySelectorAll('.container-main-table');
+		let faTrash = document.querySelectorAll('.fa-trash');
+
+		textMarketStat.forEach((item) => item.addEventListener('click', function () {
+			wrapStat.classList.add('loaded');
+			contMainTable.forEach((it) => it.classList.add('loaded'));
+		})
+		);
+
+		faTrash.forEach((child) => child.addEventListener('click', function () {
+			contMainTable.forEach((it) => it.classList.add('loaded'));
+		})
+		);
+
+	</script>
+	<!-- /// прелоадер -->
+
+
+
+	<!-- подключаем посдказки все подсказки -->
+	<script>
+
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
+
+	</script>
+	<!--   ///подключаем посдказки все подсказки -->
+
+
+
+
+
+	<script>
+
+		const card = document.querySelector('.card');
+		const cardtoggle = document.querySelector('.toggle');
+		const navigation = document.querySelector('.card .content');
+
+		navigation.onclick = function () {
+			card.classList.toggle('active');
+		}
+		cardtoggle.onclick = function () {
+			card.classList.toggle('active');
+		}
+
+	</script>
+
+
+
+	<!-- SideBar - навигация слева сбоку -->
+	<script>
+
+		function toggleMenu(event) {
+			let navigationSb = document.querySelector('.navigation-Sb');
+			let toggle = event.target;
+			console.log(event, toggle);
+			navigationSb.classList.toggle('active');
+			toggle.classList.toggle('active');
+		}
+
+
+		let liall = document.querySelectorAll('.navigation-sb-li')
+
+		liall.forEach((item) =>
+			item.addEventListener('click', function () {
+				liall.forEach((it) => it.classList.remove('li-active'));
+				item.classList.add('li-active');
+			})
+		);
+
+	</script>
+	<!-- ///SideBar - навигация слева сбоку -->
+
+
+
+	<!-- Статистика -->
+	<script>
+		let titleStat = document.querySelector('.contr-title-stat');
+		let contrStat = document.querySelector('.container-statistics');
+
+		titleStat.onclick = function toggleMenuStat() {
+			contrStat.classList.toggle('container-statistics-active');
+		}
+	</script>
+	<!-- ///Статистика -->
+
+
+
+
+	<!-- Таблица -->
+	<!-- навигация по категориям -->
+	<script>
+
+		let navItem = document.querySelectorAll('.nav-item');
+
+
+		window.addEventListener('click', function (e) {
+
+			navItem.forEach((it) => it.classList.remove('nav-item-active'));
+		}
+		);
+
+		navItem.forEach((item) => item.addEventListener('click', function (e) {
+
+			e.stopPropagation();
+			if (item.classList.contains('nav-item-active')) {
+				item.classList.remove('nav-item-active');
+			} else {
+				navItem.forEach((it) => it.classList.remove('nav-item-active'));
+				item.classList.add('nav-item-active');
+			};
+
+		})
+		);
+
+	</script>
+	<!-- ///навигация по категориям -->
+
+
+
+
+	<!-- кнопка "Помощь" -->
+	<script>
+		let dropDownLictHelp = document.querySelector('.contr-list-help');
+		let butHelp = document.querySelector('.help-all-table');
+
+		butHelp.onclick = function () {
+
+			dropDownLictHelp.classList.toggle('contr-list-help-ative');
+		};
+	</script>
+	<!-- ///кнопка "Помощь" -->
+
+
+
+
+	<!-- управление вкладкой с конкурентами -->
+	<script>
+
+		document.querySelectorAll('.dropdown-menu-k').forEach((item) =>
+			item.addEventListener('click', function (e) {
+
+				item.closest('.row-main-table').classList.toggle('konk-active');
+				var parentParent = item.closest('.row-main-table');
+				parentParent.querySelector('.list-konk').classList.toggle('konk-active');
+
+			})
+
+		);
+	</script>
+	<!-- ///управление вкладкой с конкурентами -->
+
+
+	<!-- табы основной таблицы -->
+	<script>
+		document.querySelectorAll('.content-item-tabs').forEach((item) =>
+			item.addEventListener('click', function (e) {
+				const id = item.getAttribute('data-id');
+
+				document.querySelectorAll('.content-item-tabs').forEach(
+					(child) => child.classList.remove('content-item-tabs-active')
+				);
+				document.querySelectorAll('.content-main-table').forEach(
+					(child) => child.classList.remove('content-main-table-active')
+				);
+
+				item.classList.add('content-item-tabs-active');
+				document.getElementById(id).classList.add('content-main-table-active');
+
+
+			})
+
+		);
+
+		document.querySelector('.content-item-tabs').click();
+	</script>
+	<!-- ///табы основной таблицы -->
+
+
+
+	<!-- toggle-but-категории -->
+	<script>
+
+		let toggleButFilter = document.querySelector('.but-toggle-menu-category');
+		let navTabCntr = document.querySelector('.contr-nav-tabs-add-t');
+
+		toggleButFilter.onclick = function toggleFilter() {
+			navTabCntr.classList.toggle('contr-nav-tabs-add-t-active');
+			toggleButFilter.classList.toggle('but-toggle-menu-category-active');
+		};
+
+	</script>
+	<!-- /// toggle-but-категории -->
+
+
+
+	<!-- трек обучения -->
+	<script>
+		// steptip.tooltip (ele, msg, ord, mode);
+		steptip.tooltip
+			(document.getElementById("first"), "Это первая подсказка учебника!и в ней очень много текста очень очень много текста ", 1, "dark");
+		steptip.tooltip
+			(document.getElementById("second"), "Это вторая подсказка учебника!", 2, "dark");
+		steptip.tooltip
+			(document.getElementById("third"), "Это вторая подсказка учебника!", 3, "dark");
+		steptip.tooltip
+			(document.getElementById("fourth"), "Это вторая подсказка учебника!", 4, "dark");
+		steptip.tooltip
+			(document.getElementById("last"), "Это последняя подсказка учебника!", 5, "dark");
+
+		function steptipActive() { steptip.startTutorial(); };
+
+	</script>
+	<!-- ///трек обучения -->
+
+
+
+	<!-- чекбокс "выделить всё" -->
+	<script>
+		let checkboxRowHead = document.getElementById('check-head-main-table');
+		let checkHead = document.getElementById('checkbox-head-main-table');
+		let addAll = document.querySelector('.add-all-content');
+		let inputCheckboxMainTable = document.querySelectorAll('.checkbox-product-main-table');
+		let itemAddAllClose = document.querySelector('.item-add-all-close');
+		let checkedProduct = document.getElementById('checked-product');
+
+
+		checkboxRowHead.onclick = function checkboxHeadActive() {
+			// addAll.classList.toggle('add-all-content-active');
+			if (checkHead.checked) {
+				addAll.style.zIndex = 5;
+				inputCheckboxMainTable.forEach((it) => it.checked = true);
+			} else {
+				addAll.style.zIndex = -5;
+				inputCheckboxMainTable.forEach((i) => i.checked = false);
+			}
+			checkedProduct.innerHTML = inputCheckboxMainTable.length;
+		};
+
+		itemAddAllClose.addEventListener('click', function () {
+
+			addAll.style.zIndex = -5;
+			inputCheckboxMainTable.forEach((i) => i.checked = false);
+			checkHead.checked = false;
+		});
+	</script>
+	<!-- /// чекбокс "выделить всё"-->
+
+
+</body>
+
+</html>
